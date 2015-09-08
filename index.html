@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Jake Putts</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Jakeputts is a web developer">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+  <link rel="icon" type="image/png" href="images/kaboodles.png" sizes="96x96">
+  <link rel="stylesheet" type="text/css" media="screen, projection" href="style.css"> 
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/myportfolio.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <!-- <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script> -->
+  
+</head>
+<body>
+
+  <header id="headertop"></header>
+    <header id="top">
+      <div class="profile"><h2> Jake Putts&nbsp</h2>
+        <div class="headersocial"></div>
+          <div class="social">
+            <a class="twitter" href="http://twitter.com/jakeputts" data-username="jakeputts">Twitter</a>
+            <a class="dribbble" href="https://dribbble.com/jakeputtts">Dribble</a>
+            <a class="medium" href="http://medium.com/@jakeputts">Medium</a>
+            <a class="github" href="http://github.com/jakeputts">GitHub</a>
+            <a class="email" href="mailto:jakeputts@gmail.com">Email</a>
+          </div>
+      </div>  
+      <div class="jobtitle"><h2>Web Developer</h2></div>           
+    </header>
+
+  <div id="container">
+    <h2><span><em>About</em></span></h2>
+      <section class="about">
+        <p>
+          My name is Jake and I am a developer. I love tinkering with skills I am brushing up on. My interests include design, the web and typography. Below are some of my work examples if you like to take a look.
+        </p>
+      </section>
+
+
+    <h2><span><em>Tools</em></span></h2>  
+      <section class="skillspectrum">
+        <ul class="skillsA">
+          <li class="ruby"></li>
+          <li class="html"></li>
+          <li class="js"></li>
+          <li class="postgresql"></li>
+          <li class="php"></li>
+       </ul>   
+        <ul class="skillsAname">
+          <li class="rubyname">Ruby</li>
+          <li class="htmlname">HTML</li>
+          <li class="jsname">JS</li>
+          <li class="postgresqlname">PostgreSQL</li>
+          <li class="phpname">PHP</li>
+       </ul>
+       <ul class="skillsB">
+          <li class="rails"></li>
+          <li class="css"></li>
+          <li class="d3"></li>
+          <li class="backbone"></li>
+          <li class="tdd"></li>          
+        </ul>  
+         <ul class="skillsBname">
+          <li class="railsname">Rails</li>
+          <li class="cssname">CSS</li>
+          <li class="d3name">D3</li>
+          <li class="backbonename">backbone</li>
+          <li class="tddname">TDD</li>          
+        </ul>  
+      </section>
+
+      
+    <h2><span><em>Portfolio</em></span></h2>
+
+      <div class="portfolio">
+        <div class="column column-one" onclick="http://rodger.herokuapp.com" style="cursor: pointer;">
+          <a href="http://rodger.herokuapp.com">rodger</a>
+        </div>
+        <div class="column column-two" onclick="http://enterprisedot.herokuapp.com" style="cursor: pointer;">
+          <a href="http://enterprisedot.herokuapp.com/">enterprise</a>
+        </div>
+        <div class="column column-three" onclick="http://sinanasokoro.herokuapp.com" style="cursor: pointer;">
+          <a href="http://sinanasokoro.herokuapp.com/">cloudit</a>
+        </div>
+      </div>
+
+
+    <h2><span><em>Say hi!</em></span></h2>
+
+    <section id="contact">
+      <img class="avatar" src="images/kaboodles.png" alt="Henry"> 
+      <h3>Drop me a line below</h3>
+      
+      <div id="form-messages"></div>
+        <form id="ajax-contact" method="post" action="mailer.php">
+            <p>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Name" required>
+            </p>
+            <p>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Email" required>
+            </p>
+            <p>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="8" cols="100" class="field" placeholder="Message" required></textarea>
+            </p>
+          
+          <div id="status">
+            <div class="button">
+              <button id="submit">Submit</button>
+            </div>
+          </div>
+        </form>
+    </section> 
+
+
+    <footer>
+      <!-- <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rodger.herokuapp.com/" data-text="Check this space soon again" data-count="horizontal">Tweet</a> -->
+      Jakeputts&copy;2015
+      <!-- <script type="text/javascript">document.write(new Date().getFullYear());</script> -->
+    </footer>
+  
+  </div>
+
+</body>
+</html>

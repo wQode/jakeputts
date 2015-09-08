@@ -1,0 +1,795 @@
+/* ====================================<SETUP>=================================== */
+body,html { 
+    margin:0; 
+    padding: 0; 
+    width: 100%; }
+
+body,h1,h2,h3 { 
+    font-size: 1em; }
+
+ul,li,h1,h2,h3,form,body,html,p,input,button,select,textarea { 
+    margin:0; 
+    padding:0 }
+
+ul { 
+    margin:0; 
+    margin-left: 25px; }
+
+a,button { 
+    outline: 0; }
+
+img,a img,:link img,:visited img { 
+    border:0;
+    margin:0;
+    padding:0; }
+
+@font-face{
+    font-family:ProximaNovaLight;
+    font-weight:normal;
+    src:url("fonts/Proxima-Nova-Light.otf") format("opentype"); }
+
+@font-face{
+    font-family:ProximaNovaBold;
+    font-weight:bold;
+    src:url("fonts/Proxima-Nova-Bold.otf") format("opentype"); }
+
+@font-face{
+    font-family:ProximaNovaSemibold;
+    font-weight:normal;
+    src:url("fonts/Proxima-Nova-Semibold.otf") format("opentype"); }
+
+
+input[type="submit"]::-moz-focus-inner, 
+input[type="button"]::-moz-focus-inner, 
+button::-moz-focus-inner { 
+    border: 0px; }
+
+::-moz-selection {
+    background:rgba(0,0,0,0.9);
+    color:#ffffff; }
+
+::selection {
+    background:rgba(0,0,0,0.9);
+    color:#ffffff; }
+
+/* ====================================<BODY>==================================== */
+body {
+    background: #dcdcdc url(images/header.jpg) no-repeat center top fixed;
+    background-color: #f8f8ff;
+    font: normal 16px/24px "ProximaNovaLight", "Helvetica Neue", Helvetica, sans-serif; }
+
+a {
+    color:#214a64;
+    text-decoration: none; }
+
+p strong {
+    font-family: ProximaNovaSemiBold; }
+
+/* ====================================<HEADERS>================================= */
+h1 {
+    margin: 0 auto; }
+
+    h1, h1 a {
+        display: block;
+        height: 242px;
+        width: 333px; }
+
+        h1 a {
+            background: url(images/logo.png) no-repeat 0 0;
+            border: 0; 
+            text-indent: -9999px; }
+
+header {
+    height: 526px;
+    position: fixed;
+    top: 0;
+    width: 100%; }
+
+header .profile {
+    padding-top: 175px;
+
+    -webkit-animation-name: fadeInDown;
+       -moz-animation-name: fadeInDown;
+         -o-animation-name: fadeInDown;
+            animation-name: fadeInDown;
+
+    -webkit-animation-delay: 1s;
+       -moz-animation-delay: 1s;
+         -o-animation-delay: 1s;
+            animation-delay: 1s;
+
+    -webkit-animation-duration: 1.5s;
+       -moz-animation-duration: 1.5s;
+         -o-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+
+    -webkit-animation-fill-mode: both;
+       -moz-animation-fill-mode: both;
+         -o-animation-fill-mode: both;
+            animation-fill-mode: both; }
+
+header h2 {
+    color: #ffffff;
+    display: block;
+    font-size: 3em;
+    line-height: 1em;
+    padding-top: 20px; 
+    text-align: center;
+    text-transform: uppercase; }
+
+header h2 span {
+    color: rgba(255,255,255,0.6);
+    display: block;
+    font-family: ProximaNovaLight;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    padding-top: 20px; }
+
+.jobtitle h2 {
+    color: rgba(255,255,255,0.6);
+    display: block;
+    font-family: ProximaNovaLight;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    margin-top: -100px; }
+
+    .jobtitle h2 {
+        margin-bottom: 175px;
+
+        -webkit-animation-name: fadeInUp;
+           -moz-animation-name: fadeInUp;
+             -o-animation-name: fadeInUp;
+                animation-name: fadeInUp;
+
+        -webkit-animation-delay: 1s;
+           -moz-animation-delay: 1s;
+             -o-animation-delay: 1s;
+                animation-delay: 1s;
+
+        -webkit-animation-duration: 1.5s;
+           -moz-animation-duration: 1.5s;
+             -o-animation-duration: 1.5s;
+                animation-duration: 1.5s;
+
+        -webkit-animation-fill-mode: both;
+           -moz-animation-fill-mode: both;
+             -o-animation-fill-mode: both;
+                animation-fill-mode: both; }    
+
+/* ====================================<SOCIAL BAR>============================== */
+header .headersocial { 
+    margin:80px auto 0 auto; }
+
+header .social {
+    margin-top: 100px;
+    text-align: center; }
+
+    header .social a {
+        background: none;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border: 0;
+        display: inline-block;
+        height: 50px;
+        text-align: center;
+        text-indent: -999em;
+        -webkit-transition: all .2s ease-in-out; /* For Safari 3.1 to 6.0 */
+        transition: all .2s ease-in-out;
+        -webkit-transform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5);
+        width: 50px; }
+
+    header .social a.twitter  { background-image: url(images/twitter.png); }
+    header .social a.dribbble { background-image: url(images/dribbble.png); display: none; }
+    header .social a.medium   { background-image: url(images/medium.png); display: none;}
+    header .social a.github   { background-image: url(images/github.png); }
+    header .social a.email    { background-image: url(images/email.png); }
+
+    header .social a:hover {
+        -webkit-transform: scale(0.65, 0.65);
+        transform: scale(0.65, 0.65); }
+
+/* ====================================<CONTAINER>=============================== */
+#container {
+    background: #f8f8ff;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    margin: 526px auto 0 auto;
+    padding-top: 20px;
+    position: relative;
+    width: 100%;
+    z-index: 3; }
+
+#container h2 {
+    color: #696969;
+    display: block;
+    font-family: ProximaNovaSemiBold;
+    font-size: 0.8em;
+    font-weight: bold;
+    height: 50px;
+    margin: 60px 0 20px -100px;
+    overflow: hidden;
+    padding: 0;
+    width: 100%; }
+
+    #container h2 span {
+        display: block;
+        margin: 0 auto;
+        width: 780px; }
+
+    #container h2 span em {
+        display: inline-block;
+        font-style: normal;
+        height: 10px; 
+        padding: 20px 0; }
+        
+
+/* ====================================<ABOUT, TOOLS / SKILLS >================== */
+.about, .skillspectrum {
+    display: block;
+    margin: 20px auto;
+    overflow: hidden;
+    padding-bottom: 10px;
+    width: 780px; }
+
+.about p {
+    text-align: justify; }
+
+.skillsA, .skillsB,
+.skillsAname, .skillsBname {
+    color: #696969;
+    height: 60px; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative; }
+
+    .skillsB {
+        margin: -60px auto; }
+
+    .skillsBname {
+        margin: 60px auto -30px auto; }
+
+
+
+    .skillsA li, .skillsB li, .skillsAname li, .skillsBname li {  
+        border-top-style: solid;;
+        bottom: 0;
+        display:inline-block;
+        position: absolute;
+        text-align: center;
+        width: 20%; }
+    
+        .skillsA li.ruby { border-top-color: rgba(220, 220, 220, 1.0); border-top-width: 40px; }
+        .skillsA li.html { border-top-color: rgba(220, 220, 220, 0.8); border-top-width: 40px; left: 20%; }
+        .skillsA li.js   { border-top-color: rgba(220, 220, 220, 0.6); border-top-width: 40px; left: 40%; }
+        .skillsA li.postgresql { border-top-color: rgba(220, 220, 220, 0.4); border-top-width: 40px; left: 60%; }
+        .skillsA li.php { border-top-color: rgba(220, 220, 220, 0.2); border-top-width: 40px; left: 80%; }
+        .skillsB li.rails { border-top-color: rgba(220, 220, 220, 1.0); border-top-width: 40px; }
+        .skillsB li.css  { border-top-color: rgba(220, 220, 220, 0.8); border-top-width: 40px; left: 20%; }
+        .skillsB li.d3 { border-top-color: rgba(220, 220, 220, 0.6); border-top-width: 40px; left: 40%; }
+        .skillsB li.backbone { border-top-color: rgba(220, 220, 220, 0.4); border-top-width: 40px; left: 60%; }
+        .skillsB li.tdd { border-top-color: rgba(220, 220, 220, 0.2); border-top-width: 40px; left: 80%; }
+
+        .skillsAname li, 
+        .skillsBname li {
+            border-top-style:none;
+            margin: 65px; }
+
+        .skillsAname li.rubyname       { left: -10%; }
+        .skillsAname li.htmlname       { left: 10%; }
+        .skillsAname li.jsname         { left: 30%; }
+        .skillsAname li.postgresqlname { left: 50%; }
+        .skillsAname li.phpname        { left: 70%; }
+        .skillsBname li.railsname      { left: -10%;}
+        .skillsBname li.cssname        { left: 10%; }
+        .skillsBname li.d3name         { left: 30%; }
+        .skillsBname li.backbonename   { left: 50%; }
+        .skillsBname li.tddname        { left: 70%; }
+
+/* ====================================<PORTFOLIO>=============================== */
+
+.portfolio {
+    display: flex; 
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+    padding-bottom: 40px;
+    width: 780px; }
+
+.portfolio section a { 
+    font-family: ProximaNovaSemiBold; }
+    
+        .portfolio section a.item {
+            border: 0; 
+            border-radius: 2%;
+            display: block;
+            height: 180px;
+            margin-bottom: 40px;
+            overflow: hidden;
+            position: relative;
+            width: 290px; }
+
+        .portfolio section .icon {
+            margin-bottom: 30px; }
+        
+            .portfolio section a img {
+                display: block; }
+
+.column {
+    flex: 1;
+    background : #f8f8ff;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+    color: #fff;
+    font: 16px/24px "ProximaNovaLight","Helvetica Neue",Helvetica,-serif;
+    height: 150px;
+    padding-top: 120px;
+    text-align: center;
+    width: 240px; }
+
+    .column-one {
+        order: 1;
+        margin-right:20px; 
+        background-image: url(images/thumbs/rodgers.png); }
+
+    .column-two {
+        order: 2;
+        margin-right:20px; 
+        background-image: url(images/thumbs/enterprise.png); }
+
+    .column-three {
+        order: 3;
+        background-image: url(images/thumbs/cloudit.png); }
+
+        .column-one,
+        .column-two,
+        .column-three {
+            background-size: cover;
+            /*border-radius: 10px 10px 10px 10px;*/
+            opacity: 0.60;
+            filter: alpha(opacity=60); }
+
+        .column-one:hover, 
+        .column-two:hover,
+        .column-three:hover {
+            font-size: 28px;
+            opacity: 0.8;
+            filter: alpha(opacity=80); }
+
+        .column-one a, 
+        .column-two a,
+        .column-three a {
+            color: #696969; }
+
+        .column-one a:hover, 
+        .column-two a:hover,
+        .column-three a:hover {
+            color: #696969;
+            text-shadow: 
+            1px 0px 1px #ccc,
+            0px 1px 1px #eee, 
+            2px 1px 1px #ccc; }
+
+/* ====================================<CONTACT / EMAIL>========================= */   
+#contact {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px 0;
+    width: 100%; }
+
+#contact form {
+    display: block;
+    margin: 0 auto;
+    overflow:hidden;
+    width: 500px; }
+
+    #contact h2 {
+        border-bottom: 0;
+        color: #130E08;
+        font-weight: bold;
+        font-size: 18px;
+        height: auto;
+        padding-bottom: 5px;
+        text-align: center; }
+
+    #contact h3 {
+        display: block;
+        opacity: 0.7;
+        padding-bottom: 20px;
+        text-align: center; }
+
+form p {
+    border-bottom: 1px solid #444948;
+    display: block;
+    padding-top: 20px;
+    margin-bottom: 40px; 
+    margin: 0 auto;  } /* to format, do not change */
+
+input, textarea, select {
+    background: none;
+    border: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #444948;
+    font: normal 14px/21px ProximaNovaSemiBold, "Helvetica Neue", Helvetica, sans-serif;
+    height: 40px;
+    padding: 10px 0;    
+    width: 100%; }
+
+    input {
+        resize:none; }
+
+    input, textarea {
+        padding-left: 0.7em; }
+
+    ::-webkit-input-placeholder { 
+        color: #444948 !important; 
+        font-size: 12px;
+        text-transform: uppercase;  }
+
+    :-moz-placeholder { 
+        color: #444948 !important; 
+        font-size: 12px; 
+        text-transform: uppercase; }
+
+
+    select { 
+        font-size: 12px; }
+
+    input:focus, 
+    textarea:focus, 
+    select:focus {
+        outline: none; }
+
+div.button {
+    padding-top: 60px; }
+
+#submit {
+    display: block;
+    border: 0;
+    cursor: pointer;
+    margin: 0 auto;
+    color: #444948;
+    border: 1px solid #444948;
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px 0;
+    font-size: 1.3em;
+    background: none;
+    font: normal 14px ProximaNovaBold, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center; }
+
+    #submit:hover {
+        background: #696969;
+        color: #fff; }
+
+.error {
+    border: 1.5px solid #8B0000;
+    color:black; 
+    font-size: 12px; }
+
+label {
+    display: none; }
+
+.message {
+    height: 29px; 
+    font-size: 11px;
+    line-height: 11px;
+    padding: 17px 15px 0 15px;
+    text-align: center;
+    background: none;
+    font: normal 14px ProximaNovaBold, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase; }
+
+#success { 
+    border: 1px solid #5bbd72; 
+    color: #5bbd72; }
+
+#error { 
+    border: 1px solid #FF0080;
+    color: #FF0080; }
+
+.avatar {
+        display: block;
+        border-radius: 50%;
+        width: 36px;
+        margin: 0 auto; }
+
+    .avatar:hover {
+            -webkit-animation-name: rubberBand;
+               -moz-animation-name: rubberBand;
+                 -o-animation-name: rubberBand;
+                    animation-name: rubberBand;
+
+            -webkit-animation-delay: 0.3s;
+               -moz-animation-delay: 0.3s;
+                 -o-animation-delay: 0.3s;
+                    animation-delay: 0.3s;
+
+            -webkit-animation-duration: 1s;
+               -moz-animation-duration: 1s;
+                 -o-animation-duration: 1s;
+                    animation-duration: 1s;
+
+            -webkit-animation-fill-mode: both;
+               -moz-animation-fill-mode: both;
+                 -o-animation-fill-mode: both;
+                    animation-fill-mode: both; }
+
+/* ====================================<FOOTER>================================== */   
+footer {
+    width: 780px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 11px;
+    color: #3F372F;
+    padding-bottom: 60px;
+    position: relative;
+    font-family: ProximaNovaSemibold;
+    text-align: center; }
+
+    footer p {
+        padding-bottom: 0;
+        margin: 0 auto;
+        display: block;
+        clear: both; }
+
+    footer a {
+        color: #4F4740;
+        text-decoration: none; }
+
+        footer a:hover {
+            color: #fff;
+            border-bottom-color: #fff; }
+        
+    footer .twitter-share-button {
+        position: absolute;
+        left: 0; } 
+    
+    footer .twitter-follow-button {
+        position: absolute;
+        left: 0; }
+
+/* ====================================<FROM ANIMATE.CSS>======================== */
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes rubberBand {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.rubberBand {
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+}
+
+@-webkit-keyframes shake {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+/* ====================================<RESPONSIVE DESIGN SETTINGS>============== */   
+@media only screen and (max-width: 640px) {
+    .portfolio, 
+    .portfolio .column,
+    footer,
+    #contact form,
+    #container,
+    #container h2 span { 
+        width: 100%; box-sizing: border-box; }
+
+    #container { 
+        margin-bottom: 0; }
+
+    footer { 
+        padding-top: 0; padding-bottom: 10px; }
+
+    #container,
+    #contact form {
+        padding-left: 10px;
+        padding-right: 10px; }
+
+    div.button { 
+        padding-top: 10px; }
+
+    header .profile { 
+        padding-top: 120px; }
+
+    header h2 span { 
+        padding-top: 0; padding-bottom: 20px; }}
