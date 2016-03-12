@@ -31,26 +31,20 @@
         $email_headers = "From: $name <$email>";
 
         // Sending the email
-        mail($recipient, $subject, $email_content, $email_headers);
+        if (mail($recipient, $subject, $email_content, $email_headers)) {
             // Setting a 200 (okay) response code.
-        http_response_code(200);
-        echo "Thank You! Your message has been sent.";
-        } 
-
-        else {
+            http_response_code(200);
+            echo "Thank You! Your message has been sent.";
+        } else {
             // Setting a 500 (internal server error) response code.
             http_response_code(500);
             echo "Oops! Something went wrong and we couldn't send your message.";
-?>
+        }
 
-<form method="post">
- Email: <input name="email" type="text" /><br />
- Subject: <input name="subject" type="text" /><br />
- Message:<br />
- <textarea name="message" rows="15" cols="40"></textarea><br />
- <input type="submit" value="Submit" />    
- </form>
+    } else {
+        // Setting  a 403 (forbidden) response code if not a POST request
+        http_response_code(403);
+        echo "There was a problem with your submission, please try again.";
+    }
 
- <?php 
-  }
 ?>
