@@ -17,7 +17,7 @@
         }
         */
 
-    if ($_POST["message"]) {
+    //if ($_POST["message"]) {
         // Receipient's email address
         $recipient = "jakeputts@gmail.com";
 
@@ -33,11 +33,12 @@
         $email_headers = "From: $name <$email>";
 
         // Sending the email
-        mail($recipient, $subject, $email_content, $email_headers)) 
+        mail($recipient, $subject, $email_content, $email_headers); 
             // Setting a 200 (okay) response code.
             http_response_code(200);
             echo "Thank You! Your message has been sent.";
-    } else {
+    //} 
+    else {
             // Setting a 500 (internal server error) response code.
             http_response_code(500);
             echo "Oops! Something went wrong and we couldn't send your message.";
