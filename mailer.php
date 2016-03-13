@@ -18,7 +18,7 @@
         */
 
         $msg="";
-        if(isset($_POST['send']))
+        if(isset($_POST['submit']))
         {
         //if ($_POST["message"]) {
             $from_add = "for@jakeputts.herokuapp.com";
