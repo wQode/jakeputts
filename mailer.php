@@ -17,44 +17,46 @@
         }
         */
 
-        $msg="";
-        if(isset($_REQUEST['submit']))
-        {
         //if ($_POST["message"]) {
-            $from_add = "for@jakeputts.herokuapp.com";
+            
             // Receipient's email address
-            $to = "wqueit@gmail.com";
-            // Form data
-            $name = $_REQUEST['name'];
-            $email = $_REQUEST['email'];
-            $message = $_REQUEST['message'];
-
+            $email_to = "wqueit@gmail.com";
             // Setting the email subject
-            $subject = "New contact from $name, of $email";
+            $email_subject = "Mail from jakeputts herokuapp";
+            // Form data
+            $name = $_POST['name'];
+            $email_from = $_POST['email'];
+            $comment = $_POST['message'];
+
+            
 
             // Building the email content
             //$email_content = "Name: $name\n";
             //$email_content .= "Email: $email\n\n";
             //$email_content = "Message:\n$message\n";
-            $email_content = "Message: $message";
+            $email_content = "Message details below.\r\n";
 
             // Building the email headers
             //$email_headers = "From: $name <$email>";
-            $headers = "From: $from_addt\r\n";
-            $headers .= "Reply-To: $from_addt\r\n";
-            $headers .= "Return-Path: $from_add\r\n";
-            $headers .= "X-Mailer: PHP \r\n";
+           
+           function clean_string($string)
+           {
+            $bad = array("content-type","bcc:","to:","cc:","href");
+            return str_replace($bad,"",$string);
+           }
+
+           $email_content .= "Name: ".clean_string($name)."\r\n";
+           $email_content .= "Email: ".clean_string($email)."\r\n";
+           $email_content .= "Message: ".clean_string($comment)."\r\n";
+
+           $headers = 'From '.$email_from"\r\n".
+           'Reply-To: '.$email_from."\r\n" .
+           'X-Mailer: PHP/' . phpversion();
+           @mail($email_to, $email_subject, $email_message, $headers);
+           header("Location: Thanks")
 
         // Sending the email
-            if (mail($to, $subject, $email_content, $headers))
-            {
-                $msg = "Email successfully sent.";
-            }
-            else
-            {
-                $msg = "Error sending.";
-            }
-        }
+           
             // Setting a 200 (okay) response code.
             //http_response_code(200);
             //echo "Thank You! Your message has been sent.";
