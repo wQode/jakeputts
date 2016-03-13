@@ -19,7 +19,7 @@
 
     //if ($_POST["message"]) {
         // Receipient's email address
-        $recipient = "wqueit@gmail.com";
+        $to = "wqueit@gmail.com";
         // Form data
         $name = $_POST['name'];
         $email = $_POST['email'];
@@ -39,10 +39,14 @@
         $email_headers = "From: $name \r\n";
 
         // Sending the email
-        mail($recipient, $subject, $email_content, $email_headers) or die("Error has occurred."); 
+        if (mail($to, $subject, $email_content, $email_headers)):
+            $succesMsg = "Email successfully sent.";
+        else:
+            $errorMsg = "Email not sent.";
+        endif;
             // Setting a 200 (okay) response code.
             //http_response_code(200);
-            echo "Thank You! Your message has been sent.";
+            //echo "Thank You! Your message has been sent.";
     //} 
     /*else {
             // Setting a 500 (internal server error) response code.
