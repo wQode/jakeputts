@@ -17,30 +17,44 @@
         }
         */
 
-    //if ($_POST["message"]) {
-        // Receipient's email address
-        $to = "wqueit@gmail.com";
-        // Form data
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $message = $_POST['message'];
+        $msg="";
+        if(isset($_POST['submit']))
+        {
+        //if ($_POST["message"]) {
+            $from_add = "for@jakeputts.herokuapp.com";
+            // Receipient's email address
+            $to = "wqueit@gmail.com";
+            // Form data
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $message = $_POST['message'];
 
-        // Setting the email subject
-        $subject = "New contact from $name";
+            // Setting the email subject
+            $subject = "New contact from $name, of $email";
 
-        // Building the email content
-        //$email_content = "Name: $name\n";
-        //$email_content .= "Email: $email\n\n";
-        //$email_content = "Message:\n$message\n";
-        $email_content = "From: $name \n Message: $message";
+            // Building the email content
+            //$email_content = "Name: $name\n";
+            //$email_content .= "Email: $email\n\n";
+            //$email_content = "Message:\n$message\n";
+            $email_content = "Message: $message";
 
-        // Building the email headers
-        //$email_headers = "From: $name <$email>";
-        $email_headers = "From: $name \r\n";
+            // Building the email headers
+            //$email_headers = "From: $name <$email>";
+            $headers = "From: $from_addt\r\n";
+            $headers .= "Reply-To: $from_addt\r\n";
+            $headers .= "Return-Path: $from_add\r\n";
+            $headers .= "X-Mailer: PHP \r\n";
 
         // Sending the email
-        mail($to, $subject, $email_content, $email_headers) or die("Error encountered.");
-        echo "Email successfully sent.";
+            if (mail($to, $subject, $email_content, $headers))
+            {
+                $msg = "Email successfully sent.";
+            }
+            else
+            {
+                $msg = "Error sending.";
+            }
+        }
             // Setting a 200 (okay) response code.
             //http_response_code(200);
             //echo "Thank You! Your message has been sent.";
