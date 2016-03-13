@@ -49,10 +49,10 @@
            $email_content .= "Email: ".clean_string($email)."\r\n";
            $email_content .= "Message: ".clean_string($comment)."\r\n";
 
-           $headers = 'From '.$email_from"\r\n".
+           $headers = "From ".$email_from"\r\n".
            'Reply-To: '.$email_from."\r\n" .
            'X-Mailer: PHP/' . phpversion();
-           @mail($email_to, $email_subject, $email_message, $headers);
+           @mail($email_to, $email_subject, $email_content, $headers);
            header("Location: Thanks")
 
         // Sending the email
