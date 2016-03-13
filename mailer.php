@@ -39,11 +39,10 @@
         $email_headers = "From: $name \r\n";
 
         // Sending the email
-        if (mail($to, $subject, $email_content, $email_headers)):
-            $succesMsg = "Email successfully sent.";
-        else:
-            $errorMsg = "Email not sent.";
-        endif;
+        mail($to, $subject, $email_content, $email_headers)):
+        echo "Email successfully sent.";
+        else
+        echo "Error. Sorry.";
             // Setting a 200 (okay) response code.
             //http_response_code(200);
             //echo "Thank You! Your message has been sent.";
