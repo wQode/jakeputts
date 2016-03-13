@@ -2,7 +2,7 @@
 
      
         $recipient = "jakeputts@gmail.com";
-        $name = $_POST['name']
+        $name = $_POST['name']; 
         $email = $_POST['email'];
         $message = $_POST['message'];
 ?>
