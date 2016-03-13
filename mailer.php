@@ -17,7 +17,7 @@
         }
         */
 
-    if ($_POST["name"]) {
+    if ($_POST["message"]) {
         // Receipient's email address
         $recipient = "jakeputts@gmail.com";
 
