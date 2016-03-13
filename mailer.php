@@ -18,16 +18,16 @@
         */
 
         $msg="";
-        if(isset($_POST['submit']))
+        if(isset($_REQUEST['submit']))
         {
         //if ($_POST["message"]) {
             $from_add = "for@jakeputts.herokuapp.com";
             // Receipient's email address
             $to = "wqueit@gmail.com";
             // Form data
-            $name = $_POST['name'];
-            $email = $_POST['email'];
-            $message = $_POST['message'];
+            $name = $_REQUEST['name'];
+            $email = $_REQUEST['email'];
+            $message = $_REQUEST['message'];
 
             // Setting the email subject
             $subject = "New contact from $name, of $email";

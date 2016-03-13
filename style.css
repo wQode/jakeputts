@@ -447,7 +447,7 @@ input, textarea, select {
 div.button {
     padding-top: 60px; }
 
-#send {
+#submit {
     display: block;
     border: 0;
     cursor: pointer;
@@ -464,7 +464,7 @@ div.button {
     font: normal 14px ProximaNovaBold, "Helvetica Neue", Helvetica, sans-serif;
     text-align: center; }
 
-    #send:hover {
+    #submit:hover {
         background: #696969;
         color: #fff; }
 #clear {
