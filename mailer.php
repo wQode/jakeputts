@@ -1,6 +1,4 @@
 <?php
-
-     
         $recipient = "jakeputts@gmail.com";
         $name = $_POST['name']; 
         $email = $_POST['email'];
