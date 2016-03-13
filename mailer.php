@@ -19,7 +19,7 @@
 
     if ($_POST["message"]) {
         // Receipient's email address
-        $recipient = "jakeputts@gmail.com";
+        $recipient = "wqueit@gmail.com";
 
         // Setting the email subject
         $subject = "New contact from $name";
