@@ -17,7 +17,7 @@
         }
         */
 
-    //if ($_POST["message"]) {
+    if ($_POST["submit"]) {
         // Receipient's email address
         $recipient = "jakeputts@gmail.com";
 
@@ -52,5 +52,5 @@
         echo "There was a problem with your submission, please try again.";
     }
     */
-
+}
 ?>
