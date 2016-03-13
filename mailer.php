@@ -7,6 +7,7 @@ $pass = '3b0ny15myd0g'; // place SG password here
 $name = $_POST['name']; 
 $email = $_POST['email']; 
 $message = $_POST['message'];
+$subject = "Contact from jakeputts herokuapp";
 
     // Only processing POST reqeusts
   /* if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -33,8 +34,7 @@ $params = array(
     'html'     => "<html><head><title> Contact Form</title><body>
     Name: $name\n<br>
     Email: $email\n<br>
-    Subject: $subject\n<br>
-    Message: $message<body></title></head></html>",
+    Message: $message</body></title></head></html>",
     'text'     => "
     Name: $name\n
     Email: $email\n
