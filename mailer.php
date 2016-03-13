@@ -20,6 +20,10 @@
     //if ($_POST["message"]) {
         // Receipient's email address
         $recipient = "wqueit@gmail.com";
+        // Form data
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
 
         // Setting the email subject
         $subject = "New contact from $name";
@@ -28,11 +32,11 @@
         //$email_content = "Name: $name\n";
         //$email_content .= "Email: $email\n\n";
         //$email_content = "Message:\n$message\n";
-        $email_content = $_POST['message'];
+        $email_content = "From: $name \n Message: $message";
 
         // Building the email headers
         //$email_headers = "From: $name <$email>";
-        $email_headers = "From: $name";
+        $email_headers = "From: $name \r\n";
 
         // Sending the email
         mail($recipient, $subject, $email_content, $email_headers) or die("Error has occurred."); 
@@ -52,5 +56,5 @@
         echo "There was a problem with your submission, please try again.";
     }
     */
-}
+
 ?>

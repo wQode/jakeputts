@@ -447,7 +447,7 @@ input, textarea, select {
 div.button {
     padding-top: 60px; }
 
-#submit {
+#send {
     display: block;
     border: 0;
     cursor: pointer;
@@ -464,9 +464,30 @@ div.button {
     font: normal 14px ProximaNovaBold, "Helvetica Neue", Helvetica, sans-serif;
     text-align: center; }
 
-    #submit:hover {
+    #send:hover {
         background: #696969;
         color: #fff; }
+#clear {
+    display: block;
+    border: 0;
+    cursor: pointer;
+    margin: 0 auto;
+    color: #444948;
+    border: 1px solid #444948;
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px 0;
+    font-size: 1.3em;
+    background: none;
+    font: normal 14px ProximaNovaBold, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center; }
+
+    #clear:hover {
+        background: #696969;
+        color: #fff; }
+
 
 .error {
     border: 1.5px solid #8B0000;
