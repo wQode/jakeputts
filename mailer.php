@@ -26,6 +26,8 @@ if(isset($_POST['submit'])){
     if ($result) {
         echo "<script>alert('Email sent.');</script>";
     }
+$url_home = "http://wqode.space";
+header ("Location: $url_home");    
 }
 
 ?>
