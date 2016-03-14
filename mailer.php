@@ -18,11 +18,11 @@
     curl_Close($ch);
     return $result; 
 }*/
-if(isset($_POST['submit'])){
+
 # Include the Autoloader (see "Libraries" for install instructions)
 require 'vendor/autoload.php';
 use Mailgun\Mailgun;
-
+if(isset($_POST['submit'])){
 # Instantiate the client.
 $mgClient = new Mailgun('pubkey-bf4d623ad021b625f38bee21e8fb305b');
 $domain = "wqode.space";
