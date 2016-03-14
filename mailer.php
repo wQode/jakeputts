@@ -23,10 +23,10 @@ if(isset($_POST['submit'])){
             "subject" => $subject,
             "text"    => $msg
         ));
-    if (isset($result)) {
+    if(isset($result)) {
         echo "<script>alert('Email sent.');</script>";
     }    
 }
-$url_home = "mailto:jakeputts@gmail.com";
-header ("Location: $url_home");
+$url_redirect = "http://www.wqode.space/mailto:jakeputts@gmail.com";
+header ("Location: $url_redirect");
 ?>
