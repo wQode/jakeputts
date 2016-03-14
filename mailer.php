@@ -1,7 +1,7 @@
 <?php
 function send_mail($email, $subject, $msg) {
     $api_key = "pubkey-bf4d623ad021b625f38bee21e8fb305b";
-    $domain ="www.wqode.space";
+    $domain ="wqode.space";
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
     curl_setopt($ch, CURLOPT_USERPWD, 'api:'.$api_key);
