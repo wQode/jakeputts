@@ -8,7 +8,8 @@ if(isset($_POST['submit'])){
     $name = $_POST['name']; 
     $email = $_POST['email']; 
     $msg = $_POST['message'];
-    $subject = "Contact from wqode.space";    
+    $subject = "Contact from wqode.space";  
+    $myemailaddr = <wqodes@gmail.com>;  
 
     # Instantiate the client.
     $mgClient = new Mailgun("key-aa3fb247e126efcd34632167d6633e63");
@@ -16,7 +17,7 @@ if(isset($_POST['submit'])){
 
     $result = $mgClient->sendMessage($domain, array(
             "from"    => "$name <$email>",
-            "to"      => <wqodes@gmail.com>,
+            "to"      => $myemailaddr,
             "subject" => $subject,
             "text"    => $msg
         ));
