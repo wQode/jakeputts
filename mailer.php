@@ -23,6 +23,7 @@ if(isset($_POST['submit'])){
         ));
 http_response_code(200);
 echo "<script>alert('Email sent.');</script>";
+header("Location: home.html");
 } 
 
 ?>
