@@ -27,6 +27,6 @@ if(isset($_POST['submit'])){
         echo "<script>alert('Email sent.');</script>";
     }    
 }
-$url_redirect = "http://www.wqode.space/mailto:jakeputts@gmail.com";
+$url_redirect = "<a href="mailto:jakeputts@gmail.com">Email</a>";
 header ("Location: $url_redirect");
 ?>
