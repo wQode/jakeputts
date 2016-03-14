@@ -23,11 +23,10 @@ if(isset($_POST['submit'])){
             "subject" => $subject,
             "text"    => $msg
         ));
-    if ($result) {
+    if (isset($result)) {
         echo "<script>alert('Email sent.');</script>";
-    }
-$url_home = "http://wqode.space";
-header ("Location: $url_home");    
+    }    
 }
-
+$url_home = "mailto:jakeputts@gmail.com";
+header ("Location: $url_home");
 ?>
