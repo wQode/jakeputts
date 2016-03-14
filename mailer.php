@@ -4,6 +4,8 @@
 require 'vendor/autoload.php';
 use Mailgun\Mailgun;
 
+$return_url = 'http://www.wqode.space/home.html';
+
 if(isset($_POST['submit'])){
     $name = $_POST['name']; 
     $email = $_POST['email']; 
@@ -23,7 +25,8 @@ if(isset($_POST['submit'])){
         ));
 http_response_code(200);
 echo "<script>alert('Email sent.');</script>";
-header("Location: home.html");
 } 
+
+header("Location: $return_url");
 
 ?>
