@@ -26,7 +26,7 @@ require 'vendor/autoload.php';
 use Mailgun\Mailgun;
 
 # Instantiate the client.
-$mgClient = new Mailgun('pubkey-bf4d623ad021b625f38bee21e8fb305b');
+$mgClient = new Mailgun("pubkey-bf4d623ad021b625f38bee21e8fb305b");
 $domain = "wqode.space";
 
 
@@ -38,7 +38,7 @@ if(isset($_POST['submit'])){
     $subject = "Contact from wqode.space";    
     if($name !="" && $msg != ""){
         # Make the call to the client.
-        $result = $mgClient->sendMessage($domain, array(
+        $mg->sendMessage($domain, array(
             'from'    => $name,
             'to'      => $email,
             'subject' => $subject,
