@@ -41,6 +41,6 @@ if(isset($_POST['submit'])){
             "subject" => $subject,
             "text"    => $msg
         ));
-echo "<script>alert('Email Sent Successfully.. !!');</script>";
+echo "<script>alert('Email sent.');</script>";
 } 
 ?>
