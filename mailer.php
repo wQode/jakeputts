@@ -32,7 +32,7 @@ if(isset($_POST['submit'])){
     $subject = "Contact from wqode.space";    
 
     # Instantiate the client.
-    $mgClient = new Mailgun("pubkey-bf4d623ad021b625f38bee21e8fb305b");
+    $mgClient = new Mailgun("key-aa3fb247e126efcd34632167d6633e63");
     $domain = "wqode.space";
 
     $result = $mgClient->sendMessage($domain, array(
