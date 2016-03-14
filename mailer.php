@@ -1,25 +1,4 @@
 <?php
-/*
-function send_mail($email, $subject, $msg) {
-    $api_key = "pubkey-bf4d623ad021b625f38bee21e8fb305b";
-    $domain ="wqode.space";
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
-    curl_setopt($ch, CURLOPT_USERPWD, 'api:'.$api_key);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
-    curl_setopt($ch, CURLOPT_URL, 'https://api.mailgun.net/v3/'.$domain.'/messages');
-    curl_setopt($ch, CURLOPT_POSTFIELDS, array(
-        'from' => 'Open <sayhi@wqode.space>',
-        'to' => $email,
-        'subject' => $subject,
-        'html' => $msg
-    ));
-    $result = curl_exec($ch);
-    curl_close($ch);
-    return $result; 
-}
-*/
     
 # Include the Autoloader (see "Libraries" for install instructions)
 require 'vendor/autoload.php';
@@ -36,8 +15,8 @@ if(isset($_POST['submit'])){
     $domain = "wqode.space";
 
     $result = $mgClient->sendMessage($domain, array(
-            "from"    => "$name <mailgun@wqode.space>",
-            "to"      => $email,
+            "from"    => "$name <$email>",
+            "to"      => <wqodes@gmail.com>,
             "subject" => $subject,
             "text"    => $msg
         ));
