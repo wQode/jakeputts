@@ -1,4 +1,5 @@
 <?php
+/*
 function send_mail($email, $subject, $msg) {
     $api_key = "pubkey-bf4d623ad021b625f38bee21e8fb305b";
     $domain ="wqode.space";
@@ -18,6 +19,25 @@ function send_mail($email, $subject, $msg) {
     curl_close($ch);
     return $result; 
 }
+*/
+
+# Include the Autoloader (see "Libraries" for install instructions)
+require 'vendor/autoload.php';
+use Mailgun\Mailgun;
+
+# Instantiate the client.
+$mgClient = new Mailgun('pubkey-bf4d623ad021b625f38bee21e8fb305b');
+$domain = "wqode.space";
+
+# Make the call to the client.
+$result = $mgClient->sendMessage($domain, array(
+    'from'    => $name,
+    'to'      => $email,
+    'subject' => $subject,
+    'text'    => $msg
+));
+
+
 if(isset($_POST['submit'])){
     $name = $_POST['name']; 
     $email = $_POST['email']; 
