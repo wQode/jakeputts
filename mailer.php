@@ -29,13 +29,6 @@ use Mailgun\Mailgun;
 $mgClient = new Mailgun('pubkey-bf4d623ad021b625f38bee21e8fb305b');
 $domain = "wqode.space";
 
-# Make the call to the client.
-$result = $mgClient->sendMessage($domain, array(
-    'from'    => $name,
-    'to'      => $email,
-    'subject' => $subject,
-    'text'    => $msg
-));
 
 
 if(isset($_POST['submit'])){
@@ -44,8 +37,18 @@ if(isset($_POST['submit'])){
     $msg = $_POST['message'];
     $subject = "Contact from wqode.space";    
     if($name !="" && $msg != ""){
+        # Make the call to the client.
+        $result = $mgClient->sendMessage($domain, array(
+            'from'    => $name,
+            'to'      => $email,
+            'subject' => $subject,
+            'text'    => $msg
+        ));
+
+/*
         $ip_address = $_SERVER['REMOTE_ADDR'];
         send_mail("wqodes@gmail.com", "New Message from wqode.space","The IP ($ip_address) has sent you a message: <blockquote>$msg</blockquote>");
+*/
         echo "<h2 style='color:green;'>Your message Has Been Sent</h2>";
     }else{
         echo "<h2 style='color:red;'>Please check all fields</h2>";
