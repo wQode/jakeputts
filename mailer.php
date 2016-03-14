@@ -17,14 +17,15 @@ if(isset($_POST['submit'])){
     $mgClient = new Mailgun("key-aa3fb247e126efcd34632167d6633e63");
     $domain = "wqode.space";
 
-    $result = $mgClient->sendMessage($domain, array(
+    if($result = $mgClient->sendMessage($domain, array(
             "from"    => "$name <$email>",
             "to"      => $emailaddr,
             "subject" => $subject,
             "text"    => $msg
-        ));
-http_response_code(200);
-echo "<script>alert('Email sent.');</script>";
+        ));) {
+
+        echo "<script>alert('Email sent.');</script>";
+    }
 } 
 
 header("Location: $return_url");
