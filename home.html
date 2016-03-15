@@ -12,7 +12,7 @@
   <script type="text/javascript" src="js/myportfolio.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
   <!-- <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script> -->
-  
+
 </head>
 <body>
 
@@ -104,7 +104,7 @@
       <h3>Drop me a line below</h3>
       
       <div id="form-messages"></div>
-        <form action="mailer.php" method="POST"> 
+        <form class="form" id="mailgun" role="form" method="POST"> <!-- action="mailer.php" -->
             <p>
               <label for="name">Name:</label>
               <input type="text" id="name" name="name" placeholder="Name" required>
@@ -114,14 +114,19 @@
               <input type="email" id="email" name="email" placeholder="Email" required>
             </p>
             <p>
+              <label for="subject">Subject:</label>
+              <input type="subject" id="subject" name="subject" placeholder="Subject" required>
+            </p>
+            <p>
               <label for="message">Message:</label>
               <textarea id="message" name="message" rows="8" cols="100" class="field" placeholder="Message" required></textarea>
             </p>
           
           <div id="status">
             <div class="button">
-              <input id="submit" type="submit" value="submit" name="submit">
-              <input id="clear" type="reset" value="Clear" name-"clear">
+          <!--     <input id="submit" type="submit" value="submit" name="submit">
+              <input id="clear" type="reset" value="Clear" name-"clear"> -->
+              <button id="submit" type="submit" value="submit" name="submit">Send</button>
             </div>
 
           </div>

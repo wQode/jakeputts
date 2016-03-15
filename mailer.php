@@ -1,10 +1,8 @@
 <?php
-    
+/*   
 # Include the Autoloader (see "Libraries" for install instructions)
 require 'vendor/autoload.php';
 use Mailgun\Mailgun;
-
-$return_url = 'http://www.wqode.space/home.html';
 
 if(isset($_POST['submit'])){
     $name = $_POST['name']; 
@@ -27,6 +25,9 @@ if(isset($_POST['submit'])){
         echo "<script>alert('Email sent.');</script>";
     }    
 }
-$url_redirect = "<a href="mailto:jakeputts@gmail.com"></a>";
-header ("Location: $url_redirect");
+*/
+
+
+
+
 ?>
