@@ -326,7 +326,7 @@ header .social {
     color: #fff;
     font: 16px/24px "ProximaNovaLight","Helvetica Neue",Helvetica,-serif;
     height: 150px;
-    padding-top: 120px;
+    /*padding-top: 120px;*/
     text-align: center;
     width: 240px; }
 
