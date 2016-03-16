@@ -509,12 +509,12 @@ label {
     font: normal 14px ProximaNovaBold, "Helvetica Neue", Helvetica, sans-serif;
     text-transform: uppercase; }
 
-.form_success { 
+.success { 
     border: 1px solid #5bbd72; 
     color: #5bbd72;
     text-align: center; }
 
-.form_error { 
+.error { 
     border: 1px solid #FF0080;
     color: #FF0080; }
 

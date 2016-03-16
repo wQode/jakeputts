@@ -65,7 +65,8 @@ $('#mailgun').on('submit', function(e) {
   e.preventDefault();
 
   $('#mailgun *').fadeOut(200);
-  $('#mailgun').prepend('Your submission is being processed ..');
+  $(formMessages).addClass('success');
+  $(formMessages).prepend('Your submission is being processed ..');
 
   $.ajax({
     type     : 'POST',
@@ -90,11 +91,11 @@ function responseSuccess(data) {
   data = JSON.parse(data);
 
   if(data.status === 'success') {
-    // Make sure the form Messages div has the success class
-    $('#mailgun').removeClass('error');
-    $('#mailgun').addClass('success');
+    // Make sure the form-messages div has the success class
+    $(formMessages).removeClass('error');
+    $(formMessages).addClass('success');
 
-    $('#mailgun').html('Your message has been sent.');
+    $(formMessages).html('Your message has been sent.');
 
         $('#name').val('');
         $('#email').val('');
@@ -102,10 +103,10 @@ function responseSuccess(data) {
         $('#message').val('');
   } else {
       // Make sure the formMessages div has the 'error' class
-      $('#mailgun').removeClass('success');
-      $('#mailgun').addClass('error');
+      $(formMessages).removeClass('success');
+      $(formMessages).addClass('error');
 
-      $('#mailgun').html('Message failed to send.');
+      $(formMessages).html('Message failed to send.');
   }
 
 }
