@@ -91,8 +91,8 @@ function responseSuccess(data) {
 
   if(data.status === 'success') {
     // Make sure the form Messages div has the success class
-    $(formMessages).removeClass('error');
-    $(formMessages).addClass('success');
+    $('#mailgun').removeClass('error');
+    $('#mailgun').addClass('success');
 
     $('#mailgun').html('Your message has been sent.');
 
@@ -102,8 +102,8 @@ function responseSuccess(data) {
         $('#message').val('');
   } else {
       // Make sure the formMessages div has the 'error' class
-      $(formMessages).removeClass('success');
-      $(formMessages).addClass('error');
+      $('#mailgun').removeClass('success');
+      $('#mailgun').addClass('error');
 
       $('#mailgun').html('Message failed to send.');
   }
