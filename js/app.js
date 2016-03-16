@@ -94,7 +94,7 @@ function responseSuccess(data) {
     $(formMessages).removeClass('error');
     $(formMessages).addClass('success');
 
-    $('#form-messages').html('Your message has been sent.');
+    $('#mailgun').html('Your message has been sent.');
 
         $('#name').val('');
         $('#email').val('');

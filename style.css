@@ -234,7 +234,9 @@ header .social {
     width: 780px; }
 
 .about p {
-    text-align: center; }
+    text-align: center;
+    width: 480px;
+    margin: 20px auto; }
 
 .skillsA, .skillsB,
 .skillsAname, .skillsBname {
