@@ -794,6 +794,10 @@ footer {
 
 /* ====================================<RESPONSIVE DESIGN SETTINGS>============== */   
 @media only screen and (max-width: 640px) {
+    body {
+        font-size: 85%;
+        width: 100%;
+    }
     @-ms-viewport{
         width: device-width;
     }
