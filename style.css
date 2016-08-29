@@ -41,8 +41,7 @@ img,a img,:link img,:visited img {
     src:url("fonts/Proxima-Nova-Semibold.otf") format("opentype"); }
 
 @-ms-viewport {
-    width: device-width;
-}
+    width: device-width; }
 
 input[type="submit"]::-moz-focus-inner, 
 input[type="button"]::-moz-focus-inner, 
