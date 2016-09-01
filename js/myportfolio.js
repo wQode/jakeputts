@@ -28,7 +28,7 @@ $(function() {
         var rgba     = (pos / headerHeight) * 0.4;
 
         $('.profile').css('margin-top', parallax);
-        $('header').css('background', 'rgba(0,0,0,' + rgba);
+        $('header').css('background', 'rgba(248,248,255,' + rgba);
     });
   }
 
