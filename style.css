@@ -7,7 +7,7 @@ body,html {
 body,h1,h2,h3 { 
     font-size: 1em; }
 
-/*ul,li,h1,h2,h3,form,body,html,p,input,button,select,textarea*/
+ul,li,h1,h2,h3,form,body,html,p,input,button,select,textarea,
 ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,legend,
 input,button,select,textarea,dl,dd,dt,hr,table,thead,tbody,tfoot,tr,th,td { 
     margin:0; 
@@ -209,13 +209,15 @@ header .social {
     font-size: 1em;
     font-weight: bold;
     height: 50px;
-    margin: 60px 0 20px -100px;
+    /*margin: 60px 0 20px -100px;*/
+    margin: 60px 0 20px 0;
     overflow: hidden;
     padding: 0;
     width: 100%; }
 
     #container h2 span {
         display: block;
+        margin-top:0;
         margin: 0 auto;
         width: 780px; }
 
@@ -230,6 +232,7 @@ header .social {
 .about, .skillspectrum {
     display: block;
     margin: 20px auto;
+    position: center;
     overflow: hidden;
     padding-bottom: 10px;
     width: 780px; }
@@ -334,16 +337,20 @@ header .social {
     .column-one {
         order: 1;
         margin-right:20px; 
-        background-image: url(images/thumbs/rodgers.png); }
+        background-image: url(images/thumbs/rodgers.png); 
+        background-position: center; }
 
     .column-two {
         order: 2;
         margin-right:20px; 
-        background-image: url(images/thumbs/enterprise.png); }
+        background-image: url(images/thumbs/enterprise.png); 
+        background-position: center; }
 
     .column-three {
         order: 3;
-        background-image: url(images/thumbs/cloudit.png); }
+        background-image: url(images/thumbs/cloudit.png); 
+        background-position: center;
+        background-size: 100%; }
 
         .column-one,
         .column-two,
@@ -458,7 +465,7 @@ div.button {
     color: #444948;
     border: 1px solid #444948;
     box-sizing: border-box;
-    width: 100%;
+    width: 40%;
     font-weight: bold;
     text-transform: uppercase;
     padding: 20px 0;
@@ -818,8 +825,8 @@ footer {
 
     #container,
     #contact form {
-        padding-left: 10px;
-        /*padding-right: 10px; }*/
+        /*padding-left: 10px;
+        padding-right: 10px; }*/
 
     div.button { 
         padding-top: 10px; }
