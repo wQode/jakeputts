@@ -804,18 +804,16 @@ footer {
 @media only screen 
 and (min-device-width: 220px)
 and (max-device-width: 640px) {
+    
+    #headertop {
+        background: url(images/header.jpg) no-repeat center top;
+    }
+
     body {
         font-size: 85%;
         width: 300% !important; 
-        background: #dcdcdc url(images/header.jpg) no-repeat cover top; 
-        background-color: #f8f8ff;
-    }
-
-    header {
-        height: 526px;
-        position: fixed;
-        top: 0;
-        width: 100%; 
+        background: none;
+        margin-top: -25px;
     }
 
     @-ms-viewport{
