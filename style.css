@@ -808,7 +808,7 @@ and (max-device-width: 640px) {
         font-size: 85%;
         width: 300% !important; 
         background: #dcdcdc url(images/header.jpg) no-repeat center top fixed; 
-        background-width: max-device-width !important; 
+        background-width: 300% !important; 
         background-height: 100% !important;
     }
 
