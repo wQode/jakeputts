@@ -851,7 +851,7 @@ and (max-device-width: 640px) {
         width: device-width;
     }*/
 
-    .portfolio, 
+    .portfolio, .portfolio-text,
     .portfolio .column,
     footer,
     #contact form,
