@@ -57,7 +57,6 @@ button::-moz-focus-inner {
 body {
     background: #dcdcdc url(images/header.jpg) no-repeat center top fixed; 
     background-color: #f8f8ff;
-    width: auto;
     font: normal 16px/24px "ProximaNovaLight", "Helvetica Neue", Helvetica, sans-serif; }
 
 a {
@@ -79,7 +78,9 @@ p strong {
         h1 a {
             background: url(images/logo.png) no-repeat 0 0;
             border: 0; 
-            text-indent: -9999px; } */
+            text-indent: -9999px; }*/
+
+
 header {
     height: 526px;
     position: fixed;
@@ -196,10 +197,10 @@ header .social {
 #container {
     background: #f8f8ff;
     box-shadow: 0 0 5px rgba(0,0,0,.2);
-    margin: 563px auto 0 auto;
+    margin: 552px auto 0 auto;
     padding-top: 20px;
     position: relative;
-    width: auto;
+    width: 100%;
     z-index: 3; }
 
 #container h2 {
@@ -238,8 +239,8 @@ header .social {
     width: 780px; }
 
 .about p {
-    text-align: left;
-    width: 680px;
+    text-align: center;
+    width: 520px;
     margin: 20px auto; }
 
 .skillsA, .skillsB,
@@ -800,22 +801,25 @@ footer {
 }
 
 /* ====================================<RESPONSIVE DESIGN SETTINGS>============== */   
-@media only screen and (max-device-width: 640px) {
+@media only screen 
+and (min-device-width: 220px)
+and (max-device-width: 640px) {
     body {
         font-size: 85%;
-        width: device-width;
+        width: 300% !important; 
     }
+
     @-ms-viewport{
         width: device-width;
     }
+
     .portfolio, 
     .portfolio .column,
     footer,
     #contact form,
     #container,
-    #container h2 span,
-    header { 
-        width: device-width; 
+    #container h2 span { 
+        width: 100%; 
         box-sizing: border-box; }
 
     #container { 
