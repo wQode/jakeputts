@@ -809,6 +809,13 @@ and (max-device-width: 640px) {
         width: 300% !important; 
     }
 
+    header {
+        height: 526px;
+        position: fixed;
+        top: 0;
+        width: 100%; 
+    }
+
     @-ms-viewport{
         width: device-width;
     }
