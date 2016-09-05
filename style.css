@@ -807,7 +807,7 @@ and (max-device-width: 640px) {
     
     
     body {
-        font-size: 85%;
+        font-size: 110%;
         width: 300% !important; 
         background: url(images/header.jpg) no-repeat;
         background-position-x: -8%;
