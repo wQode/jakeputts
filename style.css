@@ -258,8 +258,6 @@ header .social {
     .skillsBname {
         margin: 60px auto -30px auto; }
 
-
-
     .skillsA li, .skillsB li, .skillsAname li, .skillsBname li {  
         border-top-style: solid;;
         bottom: 0;
@@ -299,7 +297,14 @@ header .social {
 
 .portfolio {
     display: flex; 
-    margin: 0 auto 30px auto;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+    padding-bottom: 0px;
+    width: 780px; }
+
+.portfolio-text {
+    display: flex;
+    margin: 0 auto 10px auto;
     overflow: hidden;
     padding-bottom: 40px;
     width: 780px; }
@@ -326,7 +331,7 @@ header .social {
 .column {
     flex: 1;
     background : #f8f8ff;
-    border: 1px solid #e6e6e6;
+    /*border: 1px solid #e6e6e6;*/
     box-sizing: border-box;
     color: #fff;
     font: 16px/24px "ProximaNovaLight","Helvetica Neue",Helvetica,-serif;
@@ -338,24 +343,24 @@ header .social {
     .column-one {
         order: 1;
         margin-right:20px; 
-        background-image: url(images/thumbs/rodgers.png); 
+        background-image: url(images/thumbs/cloudit.png); 
         background-position: center; }
 
     .column-two {
         order: 2;
         margin-right:20px; 
-        background-image: url(images/thumbs/enterprise.png); 
+        background-image: url(images/thumbs/rodgers.png); 
         background-position: center; }
 
     .column-three {
         order: 3;
-        background-image: url(images/thumbs/cloudit.png); 
+        background-image: url(images/thumbs/enterprise.png); 
         background-position: center;
         background-size: 100%; }
 
-        .column-one,
-        .column-two,
-        .column-three {
+        .column-one, .column-one-text,
+        .column-two, .column-two-text,
+        .column-three, .column-three-text {
             background-size: cover;
             /*border-radius: 10px 10px 10px 10px;*/
             opacity: 0.60;
@@ -365,6 +370,13 @@ header .social {
         .column-two:hover,
         .column-three:hover {
             font-size: 28px;
+            opacity: 0.8;
+            filter: alpha(opacity=80); }
+
+        .column-one-text:hover, 
+        .column-two-text:hover,
+        .column-three-text:hover {
+            font-size: 18px;
             opacity: 0.8;
             filter: alpha(opacity=80); }
 
@@ -381,6 +393,28 @@ header .social {
             1px 0px 1px #ccc,
             0px 1px 1px #eee, 
             2px 1px 1px #ccc; }
+.row {
+    flex: 1;
+    background : #f8f8ff;
+    /*border: 1px solid #e6e6e6;*/
+    box-sizing: border-box;
+    color: #fff;
+    font: 16px/24px "ProximaNovaLight","Helvetica Neue",Helvetica,-serif;
+    height: 100px;
+    text-align: center;
+    width: 240px; }
+
+        .column-one-text{
+            order: 1;
+            margin-right:20px; }
+
+        .column-two-text{
+            order: 2;
+            margin-right:20px; }
+
+        .column-three-text{
+            order: 3; }
+    
 
 /* ====================================<CONTACT / EMAIL>========================= */   
 #contact {
