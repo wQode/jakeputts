@@ -809,12 +809,8 @@ and (max-device-width: 640px) {
     body {
         font-size: 85%;
         width: 300% !important; 
-        background: none;
-        margin-top: -25px;
-    }
-    
-    #headertop {
-        background: url(images/header.jpg) no-repeat center top;
+        background: url(images/header.jpg) no-repeat;
+        background-position-x: -8%;
     }
 
     /*@-ms-viewport{
