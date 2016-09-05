@@ -807,7 +807,7 @@ and (max-device-width: 640px) {
     body {
         font-size: 85%;
         width: 300% !important; 
-        background-size: 100%;
+        background: #dcdcdc url(images/header.jpg) no-repeat center top fixed; 
     }
 
     @-ms-viewport{
