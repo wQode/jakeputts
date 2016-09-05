@@ -807,6 +807,8 @@ and (max-device-width: 640px) {
     body {
         font-size: 85%;
         width: 300% !important; 
+        background: #dcdcdc url(images/header.jpg) no-repeat cover top; 
+        background-color: #f8f8ff;
     }
 
     header {
