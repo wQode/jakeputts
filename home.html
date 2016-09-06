@@ -81,29 +81,62 @@
     <h2><span><em>Portfolio</em></span></h2>
 
       <div class="portfolio">
-        <div class="column column-one" onclick="location.href='http://sinanasokoro.herokuapp.com';" style="cursor: pointer;">
+        <div class="row1 column-one" onclick="location.href='http://rodger.herokuapp.com';" style="cursor: pointer;">
+          <a id="tester">rodger</a>
+        </div>
+        <div class="row1 column-two" onclick="location.href='http://sinanasokoro.herokuapp.com';" style="cursor: pointer;">
           <a>cloudit</a>
         </div>
-        <div class="column column-two" onclick="location.href='http://rodger.herokuapp.com';" style="cursor: pointer;">
-          <a>rodger</a>
-        </div>
-        <div class="column column-three" onclick="location.href='http://enterprisedot.herokuapp.com';" style="cursor: pointer;">
+        <div class="row1 column-three" onclick="location.href='http://enterprisedot.herokuapp.com';" style="cursor: pointer;">
           <a>enterprise</a>
         </div>
       </div>
-  
+      
+      <div class="portfolio-title">
+        <div class="row2 column-one-title">
+          <p>
+            Rodger is a text-based simple CMS.
+          </p>
+        </div>
+        <div class="row2 column-two-title">
+          <p>
+            Cloudit is a word cloud mapper data visualiser.
+          </p>
+        </div>
+        <div class="row2 column-three-title">
+          <p>
+            EnterpriseDot is a page-based CMS.
+          </p>
+        </div>
+      </div>
+
       <div class="portfolio-text">
-        <div class="row column-one-text">
-            <a>cloudit is a word cloud mapper</a>
-            <a>Written with Ruby on Rails and D3.js</a>
+        <div class="row3 column-one-text">     
+          <p>
+            Functions include index, create, edit, delete, search, archive. Capable of categorising and referencing entries and revisions made. User login authorisation and administration functions.
+          </p>
         </div>
-        <div class="row column-two-text" onclick="location.href='http://rodger.herokuapp.com';" style="cursor: pointer;">
-            <a>rodger is a text-based CMS with categories, search, referenced capabilities.</a>
-            <a>Written with Ruby on Rails</a>
+        <div class="row3 column-two-text">    
+          <p>
+            Capable of accepting any length of text to generate a word cloud. Functions include index, create, edit, remove, search. Capable of multiple word exceptions and minimum word frequency.
+          </p>
         </div>
-        <div class="row column-three-text">
-            <a>enterprise is a system where you can upload documents by pages, with search, edit, capabilities.</a>
-            <a>Written with Ruby on Rails</a>
+        <div class="row3 column-three-text">
+          <p>
+            Functions include create, edit, delete. Capable of uploading and removing multiple images, search, manual pagination and JSON export. Includes a forum, able to index, create, edit and deletion of comments. User login authorisation functions.
+          </p>
+        </div>
+      </div>
+
+      <div class="portfolio-lang">
+        <div class="row4 column-one-lang">
+          <p>Built mainly with <br>Ruby on Rails, <br>JQuery, JSON, PostgreSQL.</p>
+        </div>
+        <div class="row4 column-two-lang">
+          <p>Built mainly with <br>Ruby on Rails, <br>D3.js</p>
+        </div>
+        <div class="row4 column-three-lang">
+          <p>Built mainly with <br>Ruby on Rails, <br>JQuery, JSON, PostgreSQL.</p>
         </div>
       </div>
 

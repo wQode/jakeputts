@@ -295,7 +295,8 @@ header .social {
 
 /* ====================================<PORTFOLIO>=============================== */
 
-.portfolio {
+.portfolio, .portfolio-title,
+.portfolio-text, .portfolio-lang {
     display: flex; 
     margin: 0 auto 0 auto;
     overflow: hidden;
@@ -303,11 +304,22 @@ header .social {
     width: 780px; }
 
 .portfolio-text {
-    display: flex;
+    padding-bottom: 80px; }
+
+.portfolio-lang p {
     margin: 0 auto 10px auto;
-    overflow: hidden;
-    padding-bottom: 40px;
-    width: 780px; }
+    padding-bottom: 40px; 
+    text-align:left; }
+
+.portfolio-title p {
+    color: #214a64;
+    font-size: 14px; 
+    text-align: center; }
+
+.portfolio-text p {
+    color: #2F4F4F; 
+    font-size: 16px; 
+    text-align: justify; }
 
 .portfolio section a { 
     font-family: ProximaNovaSemiBold; }
@@ -325,31 +337,30 @@ header .social {
         .portfolio section .icon {
             margin-bottom: 30px; }
         
-            .portfolio section a img {
-                display: block; }
+        .portfolio section a img {
+            display: block; }
 
-.column {
+.row1, .row2, .row3, .row4 {
     flex: 1;
     background : #f8f8ff;
     /*border: 1px solid #e6e6e6;*/
     box-sizing: border-box;
-    color: #fff;
-    font: 16px/24px "ProximaNovaLight","Helvetica Neue",Helvetica,-serif;
+    color: #696969;
+    font: 20px/30px "ProximaNovaLight","Helvetica Neue",Helvetica,-serif;
     height: 150px;
-    /*padding-top: 120px;*/
     text-align: center;
     width: 240px; }
 
     .column-one {
         order: 1;
         margin-right:20px; 
-        background-image: url(images/thumbs/cloudit.png); 
+        background-image: url(images/thumbs/rodgers.png); 
         background-position: center; }
 
     .column-two {
         order: 2;
         margin-right:20px; 
-        background-image: url(images/thumbs/rodgers.png); 
+        background-image: url(images/thumbs/cloudit.png); 
         background-position: center; }
 
     .column-three {
@@ -358,63 +369,107 @@ header .social {
         background-position: center;
         background-size: 100%; }
 
-        .column-one, .column-one-text,
-        .column-two, .column-two-text,
-        .column-three, .column-three-text {
-            background-size: cover;
-            /*border-radius: 10px 10px 10px 10px;*/
-            opacity: 0.60;
-            filter: alpha(opacity=60); }
-
-        .column-one:hover, 
-        .column-two:hover,
-        .column-three:hover {
-            font-size: 28px;
-            opacity: 0.8;
-            filter: alpha(opacity=80); }
-
-        .column-one-text:hover, 
-        .column-two-text:hover,
-        .column-three-text:hover {
-            font-size: 18px;
-            opacity: 0.8;
-            filter: alpha(opacity=80); }
-
-        .column-one a, 
-        .column-two a,
-        .column-three a {
-            color: #696969; }
-
-        .column-one a:hover, 
-        .column-two a:hover,
-        .column-three a:hover {
-            color: #696969;
-            text-shadow: 
-            1px 0px 1px #ccc,
-            0px 1px 1px #eee, 
-            2px 1px 1px #ccc; }
-.row {
-    flex: 1;
-    background : #f8f8ff;
-    /*border: 1px solid #e6e6e6;*/
-    box-sizing: border-box;
-    color: #fff;
+.row2 {
     font: 16px/24px "ProximaNovaLight","Helvetica Neue",Helvetica,-serif;
-    height: 100px;
-    text-align: center;
-    width: 240px; }
+    height: 30px; }
 
-        .column-one-text{
+        .column-one-title {
             order: 1;
             margin-right:20px; }
 
-        .column-two-text{
+        .column-two-title {
             order: 2;
             margin-right:20px; }
 
-        .column-three-text{
+        .column-three-title {
             order: 3; }
-    
+
+.row3 {
+    font: 16px/24px "ProximaNovaLight","Helvetica Neue",Helvetica,-serif;
+    height: 120px; }
+
+        .column-one-text {
+            order: 1;
+            margin-right:20px; }
+
+        .column-two-text {
+            order: 2;
+            margin-right:20px; }
+
+        .column-three-text {
+            order: 3; }
+
+.row4 {
+    font: 16px/24px "ProximaNovaLight","Helvetica Neue",Helvetica,-serif;
+    height: 160px; }
+
+        .column-one-lang {    
+            order: 1;
+            margin-right:20px; }
+
+        .column-two-lang {
+            order: 2;
+            margin-right:20px; }
+
+        .column-three-lang {
+            order: 3; }
+
+.column-one, .column-one-text, .column-one-lang,
+.column-two, .column-two-text, .column-two-lang,
+.column-three, .column-three-text, .column-three-lang {
+    background-size: cover;
+    opacity: 0.60;
+    filter: alpha(opacity=60); }
+        
+.column-one:hover,
+.column-two:hover,
+.column-three:hover {
+    padding-top: 8px;
+    font-size: 48px;
+    font-weight: bold;
+    opacity: 0.6;
+    filter: alpha(opacity=20); }
+
+.column-one a, 
+.column-two a,
+.column-three a {
+    color: #000000; }
+
+
+/*  .column-one-text:hover a, 
+.column-two-text:hover a,
+.column-three-text:hover a {
+    font-size: 18px;
+    opacity: 0.8;
+    filter: alpha(opacity=80); } */
+
+.column-one a:hover, .column-one:hover, 
+.column-two a:hover, .column-two:hover,
+.column-three a:hover, .column-three:hover
+ {  
+    font-weight: bold;
+    color: #FFFFFF;
+    /*#696969  
+    1px 0px 1px #ccc,
+    0px 1px 1px #eee, 
+    2px 1px 1px #ccc;
+
+    #000 0px 0px 1px,
+    #000 0px 0px 1px,
+    #000 0px 0px 1px;*/
+    text-shadow: 
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px   1px   rgba(0,0,0,.1),
+    0 0     5px   rgba(0,0,0,.1),
+    0 1px   3px   rgba(0,0,0,.3),
+    0 3px   5px   rgba(0,0,0,.2),
+    0 5px   10px  rgba(0,0,0,.25),
+    0 10px  10px  rgba(0,0,0,.2),
+    0 20px  20px  rgba(0,0,0,.15); }
 
 /* ====================================<CONTACT / EMAIL>========================= */   
 #contact {
