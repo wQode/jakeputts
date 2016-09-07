@@ -481,32 +481,36 @@ header .social {
           text-align: left; 
           display: block; }
 
-        .column-one-lang-bar li.lang-ruby         { border-top-color:rgba(220,220,220,1.0); border-top-width: 20px; width: 100%; }
-        .column-one-lang-bar li.lang-rails        { border-top-color:rgba(220,220,220,0.8); border-top-width: 20px; width: 100%; }
-        .column-one-lang-bar li.lang-jquery       { border-top-color:rgba(220,220,220,0.7); border-top-width: 20px; width:  50%; }
+        .column-one-lang-bar li.lang-ror          { border-top-color:rgba(220,220,220,1.0); border-top-width: 20px; width: 100%; }
+        .column-one-lang-bar li.lang-htmlcss      { border-top-color:rgba(220,220,220,0.8); border-top-width: 20px; width: 100%; }
+        .column-one-lang-bar li.lang-jqueryjs     { border-top-color:rgba(220,220,220,0.7); border-top-width: 20px; width:  50%; }
         .column-one-lang-bar li.lang-ajax         { border-top-color:rgba(220,220,220,0.5); border-top-width: 20px; width:  40%; }
         .column-one-lang-bar li.lang-postgresql   { border-top-color:rgba(220,220,220,0.3); border-top-width: 20px; width: 100%; }
 
-        .column-two-lang-bar li.lang-ruby         { border-top-color:rgba(220,220,220,1.0); border-top-width: 20px; width: 100%; }
-        .column-two-lang-bar li.lang-rails        { border-top-color:rgba(220,220,220,0.8); border-top-width: 20px; width: 100%; }
-        .column-two-lang-bar li.lang-jquery       { border-top-color:rgba(220,220,220,0.7); border-top-width: 20px; width:  80%; }
+        .column-two-lang-bar li.lang-ror          { border-top-color:rgba(220,220,220,1.0); border-top-width: 20px; width: 100%; }
+        .column-two-lang-bar li.lang-htmlcss      { border-top-color:rgba(220,220,220,0.8); border-top-width: 20px; width: 100%; }
+        .column-two-lang-bar li.lang-jqueryjs     { border-top-color:rgba(220,220,220,0.7); border-top-width: 20px; width:  80%; }
         .column-two-lang-bar li.lang-d3           { border-top-color:rgba(220,220,220,0.5); border-top-width: 20px; width: 100%; }
         .column-two-lang-bar li.lang-postgresql   { border-top-color:rgba(220,220,220,0.3); border-top-width: 20px; width: 100%; }
 
-        .column-three-lang-bar li.lang-ruby       { border-top-color:rgba(220,220,220,1.0); border-top-width: 20px; width: 100%; }
-        .column-three-lang-bar li.lang-rails      { border-top-color:rgba(220,220,220,0.8); border-top-width: 20px; width: 100%; }
-        .column-three-lang-bar li.lang-jquery     { border-top-color:rgba(220,220,220,0.7); border-top-width: 20px; width:  60%; }
+        .column-three-lang-bar li.lang-ror        { border-top-color:rgba(220,220,220,1.0); border-top-width: 20px; width: 100%; }
+        .column-three-lang-bar li.lang-htmlcss    { border-top-color:rgba(220,220,220,0.8); border-top-width: 20px; width: 100%; }
+        .column-three-lang-bar li.lang-jqueryjs   { border-top-color:rgba(220,220,220,0.7); border-top-width: 20px; width:  60%; }
         .column-three-lang-bar li.lang-json       { border-top-color:rgba(220,220,220,0.5); border-top-width: 20px; width:  40%; }
         .column-three-lang-bar li.lang-postgresql { border-top-color:rgba(220,220,220,0.3); border-top-width: 20px; width: 100%; }
 
-        .column-one-lang-bar-name li.lang-ruby-name { left: -100%; }
+        
 
-        .column-one-lang-bar-name li,
-        .column-two-lang-bar-name li,
+        .column-one-lang-bar-name li {
+             margin: 12px auto -10px 1px; 
+        }
+        .column-two-lang-bar-name li {
+             margin: 12px auto -10px 20px; 
+        }
         .column-three-lang-bar-name li {
-            border-top-style:none;
-            margin: 12px auto -10px 15px; 
-            text-align: left; }
+            /*border-top-style:none;
+            text-align: left;*/
+            margin: 12px auto -10px 20px; }
 
     /*.skillsB {
         margin: -60px auto; }
@@ -1015,8 +1019,8 @@ and (max-device-width: 640px) {
         width: device-width;
     }*/
 
-    .portfolio, .portfolio-text,
-    .portfolio .column,
+    .portfolio, .portfolio-text, .portfolio-title
+    .portfolio .column, .portfolio-lang-bar, .portfolio-lang-bar-name,
     footer,
     #contact form,
     #container,
