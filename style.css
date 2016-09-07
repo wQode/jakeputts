@@ -375,14 +375,17 @@ header .social {
 
         .column-one-title {
             order: 1;
-            margin-right:20px; }
+            margin-right:20px; 
+            background-position: center; }
 
         .column-two-title {
             order: 2;
-            margin-right:20px; }
+            margin-right:20px; 
+            background-position: center; }
 
         .column-three-title {
-            order: 3; }
+            order: 3; 
+            background-position: center; }
 
 .row3 {
     font: 16px/24px "ProximaNovaLight","Helvetica Neue",Helvetica,-serif;
@@ -390,14 +393,17 @@ header .social {
 
         .column-one-text {
             order: 1;
-            margin-right:20px; }
+            margin-right:20px; 
+            background-position: center; }
 
         .column-two-text {
             order: 2;
-            margin-right:20px; }
+            margin-right:20px; 
+            background-position: center; }
 
         .column-three-text {
-            order: 3; }
+            order: 3; 
+            background-position: center; }
 
 .row4 {
     font: 16px/24px "ProximaNovaLight","Helvetica Neue",Helvetica,-serif;
@@ -405,14 +411,17 @@ header .social {
 
         .column-one-lang {    
             order: 1;
-            margin-right:20px; }
+            margin-right:20px;
+            background-position: center; }
 
         .column-two-lang {
             order: 2;
-            margin-right:20px; }
+            margin-right:20px; 
+            background-position: center; }
 
         .column-three-lang {
-            order: 3; }
+            order: 3; 
+            background-position: center; }
 
 .column-one, .column-one-text, .column-one-lang,
 .column-two, .column-two-text, .column-two-lang,
