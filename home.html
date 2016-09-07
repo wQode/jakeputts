@@ -35,9 +35,7 @@
         <p>
           My name is Wendy Quek.<br>
           I am a business solutions specialist and a full-stack developer.<br>
-          My core experience is in identifying solutions and delivering results with the customer in mind.<br>
-          Beyond my professional focus, I investigate game theorycrafting.
-          I welcome opportunities for profit and non-profit.
+          My core experience is in identifying solutions and delivering results with the customer in mind. Beyond my professional focus, I investigate game theorycrafting. I welcome opportunities for profit and non-profit.
         </p>
         <p>
           Say Hello and tell me more.
@@ -94,61 +92,119 @@
       
       <div class="portfolio-title">
         <div class="row2 column-one-title">
-          <p>
-            Rodger is a text-based simple CMS.
-          </p>
+          <p>Text-based simple CMS</p>
         </div>
         <div class="row2 column-two-title">
-          <p>
-            Cloudit is a word cloud mapper data visualiser.
-          </p>
+          <p>Word cloud mapper, data visualisation tool</p>
         </div>
         <div class="row2 column-three-title">
-          <p>
-            EnterpriseDot is a page-based CMS.
-          </p>
+          <p>CMS, document, page-based</p>
         </div>
       </div>
 
       <div class="portfolio-text">
         <div class="row3 column-one-text">     
-          <h3>Functions</h3>
-          <p>
-            Functions include index, create, edit, delete, search, archive. Capable of categorising and referencing entries and revisions made. User login authorisation and administration functions.
-          </p>
+          <p>Simple CMS for posting text content, multiple users.</p>
+          <ul>
+            <li>Create, edit, delete</li>
+            <li>Index, search, archive</li>
+            <li>Categorising and referencing entries and revisions made</li>
+            <li>User login authorisation and administration functions</li>
+          </ul>
         </div>
         <div class="row3 column-two-text">    
-          <p>
-            Capable of accepting any length of text to generate a word cloud. Functions include index, create, edit, remove, search. Capable of multiple word exceptions and minimum word frequency.
-          </p>
+          <p>Capable of accepting any length of text to generate a word cloud.</p>
+          <ul>
+            <li>Create, edit, delete</li> 
+            <li>Index, search</li>
+            <li>Multiple word exceptions</li>
+            <li>Minimum word frequency</li>
+          </ul>
         </div>
         <div class="row3 column-three-text">
-          <p>
-            Functions include create, edit, delete. Capable of uploading and removing multiple images, search, manual pagination and JSON export. Includes a forum, able to index, create, edit and deletion of comments. User login authorisation functions.
-          </p>
+          <p>CMS for single large document, create by page.</p>
+          <ul>
+            <li>Create, edit, delete</li>
+            <li>Index, search</li>
+            <li>Upload/delete multiple images</li>
+            <li>Manual pagination</li>
+            <li>JSON export</li>
+            <li>Forum - Index, Create, Edit</li>
+            <li>User login authorisation</li>
+          </ul>       
         </div>
       </div>
+      
 
-      <div class="portfolio-lang">
+      <!--<div class="portfolio-lang">
         <div class="row4 column-one-lang">
-          <p>Built mainly with <br>Ruby on Rails, <br>JQuery, JSON, PostgreSQL.</p>
+          <p>Ruby on Rails, JQuery, JSON, PostgreSQL.</p>
         </div>
         <div class="row4 column-two-lang">
-          <p>Built mainly with <br>Ruby on Rails, <br>D3.js</p>
+          <p>Ruby on Rails, D3.js</p>
         </div>
         <div class="row4 column-three-lang">
-          <p>Built mainly with <br>Ruby on Rails, <br>JQuery, JSON, PostgreSQL.</p>
+          <p>Ruby on Rails, JQuery, JSON, PostgreSQL.</p>
         </div>
+      </div>-->
+
+      <div class="portfolio-lang-bar">
+        <div class="row5 column-one-lang-bar">
+          <li class="lang-ruby"></li>
+          <li class="lang-rails"></li>
+          <li class="lang-jquery"></li>
+          <li class="lang-ajax"></li>
+          <li class="lang-postgresql"></li>
+        </div> 
+        <div class="row5 column-two-lang-bar">
+          <li class="lang-ruby"></li>
+          <li class="lang-rails"></li>
+          <li class="lang-jquery"></li>
+          <li class="lang-d3"></li>
+          <li class="lang-postgresql"></li>
+        </div> 
+        <div class="row5 column-three-lang-bar">
+          <li class="lang-ruby"></li>
+          <li class="lang-rails"></li>
+          <li class="lang-jquery"></li>
+          <li class="lang-json"></li>
+          <li class="lang-postgresql"></li>
+        </div>  
+      </div> 
+
+      <div class="portfolio-lang-bar-name">
+        <div class="row6 column-one-lang-bar-name">
+          <li class="lang-ruby-name">Ruby</li>
+          <li class="lang-rails-name">Rails</li>
+          <li class="lang-jquery-name">JQuery</li>
+          <li class="lang-ajax-name">AJAX</li>
+          <li class="lang-postgresql-name">PostgreSQL</li>
+        </div> 
+        <div class="row6 column-two-lang-bar-name">
+          <li class="lang-ruby-name">Ruby</li>
+          <li class="lang-rails-name">Rails</li>
+          <li class="lang-jquery-name">JQuery</li>
+          <li class="lang-d3-name">D3</li>
+          <li class="lang-postgresql-name">PostgreSQL</li>
+        </div> 
+        <div class="row6 column-three-lang-bar-name">
+          <li class="lang-ruby-name">Ruby</li>
+          <li class="lang-rails-name">Rails</li>
+          <li class="lang-jquery-name">JQuery</li>
+          <li class="lang-json-name">JSON</li>
+          <li class="lang-postgresql-name">PostgreSQL</li>
+        </div> 
+        
       </div>
+        
+    
 
     <h2><span><em>Say Hello</em></span></h2>
 
     <section id="contact">
       <img class="avatar" src="images/kaboodles.png" alt="Henry"> 
       <h3>Tell me how I can help you</h3>
-      
       <div class="" id="form-messages"></div>
-
         <form class="form" id="mailgun" role="form" method="POST">
             <p>
               <label for="name">Name:</label>
@@ -171,7 +227,6 @@
             <div class="button">
               <button id="submit" type="submit" value="submit" name="submit">Send</button>
             </div>
-
           </div>
         </form>
     </section> 
