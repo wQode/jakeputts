@@ -1019,7 +1019,7 @@ and (max-device-width: 640px) {
         width: device-width;
     }*/
 
-    .portfolio, .portfolio-text, .portfolio-title
+    .portfolio, .portfolio-text, .portfolio-title,
     .portfolio .column, .portfolio-lang-bar, .portfolio-lang-bar-name,
     footer,
     #contact form,
