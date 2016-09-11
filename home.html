@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>wQode</title>
+  <title>wQode, Solutions Developer</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="wQode, web developer">
+  <meta name="description" content="wQode, is Wendy Quek, a Brisbane based Business Solutions Specilist Full Stack Web Developer">
   <meta name="viewport" content="width=device-width, maximum-scale=1.0">
   <link rel="icon" type="image/png" href="images/kaboodles.png" sizes="96x96">
   <link rel="stylesheet" type="text/css" media="screen, projection" href="style.css"> 
@@ -17,7 +17,10 @@
 </head>
 <body>
     <header id="top">
-      <div class="profile"><h2> Wendy Quek&nbsp</h2>
+      <div class="profile">
+
+        <h2> Wendy Quek&nbsp</h2>
+
           <div class="social">
             <a class="twitter" href="http://twitter.com/wqode" data-username="wqode">Twitter</a>
             <a class="dribbble" href="https://dribbble.com/wqode">Dribble</a>
@@ -25,13 +28,14 @@
             <a class="github" href="http://github.com/wqode">GitHub</a>
             <a class="email" href="mailto:wqodes@gmail.com">Email</a>
           </div>
+
       </div>  
       <div class="jobtitle"><h2>Solutions Developer</h2></div>           
     </header>
 
   <div id="container">
     <h2><span><em>About</em></span></h2>
-      <section class="about">
+      <section class="about revealOnScroll">
         <p>
           Hello.<br>
           I am a business solutions specialist and a full-stack web developer.<br>
@@ -44,7 +48,7 @@
 
   
     <h2><span><em>Tools</em></span></h2>  
-      <section class="skillspectrum">
+      <section class="skillspectrum revealOnScroll">
         <ul class="skillsA">
           <li class="ruby"></li>
           <li class="html"></li>
@@ -79,13 +83,13 @@
     <h2><span><em>Portfolio</em></span></h2>
 
       <div class="portfolio">
-        <div class="row1 column-one" onclick="location.href='http://rodger.herokuapp.com';" style="cursor: pointer;">
+        <div class="row1 column-one revealOnScroll" onclick="location.href='http://rodger.herokuapp.com';" style="cursor: pointer;">
           <a id="tester">rodger</a>
         </div>
-        <div class="row1 column-two" onclick="location.href='http://sinanasokoro.herokuapp.com';" style="cursor: pointer;">
+        <div class="row1 column-two revealOnScroll2" onclick="location.href='http://sinanasokoro.herokuapp.com';" style="cursor: pointer;"
           <a>cloudit</a>
         </div>
-        <div class="row1 column-three" onclick="location.href='http://enterprisedot.herokuapp.com';" style="cursor: pointer;">
+        <div class="row1 column-three revealOnScroll3" onclick="location.href='http://enterprisedot.herokuapp.com';" style="cursor: pointer;">
           <a>enterprise</a>
         </div>
       </div>
@@ -134,41 +138,28 @@
           </ul>       
         </div>
       </div>
-      
-
-      <!--<div class="portfolio-lang">
-        <div class="row4 column-one-lang">
-          <p>Ruby on Rails, JQuery, JSON, PostgreSQL.</p>
-        </div>
-        <div class="row4 column-two-lang">
-          <p>Ruby on Rails, D3.js</p>
-        </div>
-        <div class="row4 column-three-lang">
-          <p>Ruby on Rails, JQuery, JSON, PostgreSQL.</p>
-        </div>
-      </div>-->
 
       <div class="portfolio-lang-bar">
         <div class="row5 column-one-lang-bar">
-          <li class="lang-ror"></li>
-          <li class="lang-htmlcss"></li>
-          <li class="lang-jqueryjs"></li>
-          <li class="lang-ajax"></li>
-          <li class="lang-postgresql"></li>
+          <li class="lang-ror revealOnScrollBar"></li>
+          <li class="lang-htmlcss revealOnScrollBar2"></li>
+          <li class="lang-jqueryjs revealOnScrollBar3"></li>
+          <li class="lang-ajax revealOnScrollBar"></li>
+          <li class="lang-postgresql revealOnScrollBar2"></li>
         </div> 
         <div class="row5 column-two-lang-bar">
-          <li class="lang-ror"></li>
-          <li class="lang-htmlcss"></li>
-          <li class="lang-jqueryjs"></li>
-          <li class="lang-d3"></li>
-          <li class="lang-postgresql"></li>
+          <li class="lang-ror revealOnScrollBar2"></li>
+          <li class="lang-htmlcss revealOnScrollBar3"></li>
+          <li class="lang-jqueryjs revealOnScrollBar"></li>
+          <li class="lang-d3 revealOnScrollBar2"></li>
+          <li class="lang-postgresql revealOnScrollBar3"></li>
         </div> 
         <div class="row5 column-three-lang-bar">
-          <li class="lang-ror"></li>
-          <li class="lang-htmlcss"></li>
-          <li class="lang-jqueryjs"></li>
-          <li class="lang-json"></li>
-          <li class="lang-postgresql"></li>
+          <li class="lang-ror revealOnScrollBar3"></li>
+          <li class="lang-htmlcss revealOnScrollBar"></li>
+          <li class="lang-jqueryjs revealOnScrollBar2"></li>
+          <li class="lang-json revealOnScrollBar3"></li>
+          <li class="lang-postgresql revealOnScrollBar"></li>
         </div>  
       </div> 
 
@@ -202,7 +193,7 @@
     <h2><span><em>Say Hello</em></span></h2>
 
     <section id="contact">
-      <img class="avatar" src="images/kaboodles.png" alt="Henry"> 
+      <img class="avatar revealOnScroll" src="images/kaboodles.png" alt="Henry"> 
       <h3>Tell me how I can help you</h3>
       <div class="" id="form-messages"></div>
         <form class="form" id="mailgun" role="form" method="POST">

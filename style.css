@@ -56,8 +56,9 @@ button::-moz-focus-inner {
 /* ====================================<BODY>==================================== */
 body {
     background: #dcdcdc url(images/header.jpg) no-repeat center top fixed; 
-    background-color: #f8f8ff;
-    font: normal 16px/24px "ProximaNovaLight", "Helvetica Neue", Helvetica, sans-serif; }
+    background-color: #F8F8FF;
+    font: normal 16px/24px "ProximaNovaLight", "Helvetica Neue", Helvetica, sans-serif; 
+    color: #4B0082;}
 
 a {
     color:#214a64;
@@ -67,20 +68,6 @@ p strong {
     font-family: ProximaNovaSemiBold; }
 
 /* ====================================<HEADERS>================================= */
-/*h1 {
-    margin: 0 auto; }
-
-    h1, h1 a {
-        display: block;
-        height: 242px;
-        width: 333px; }
-
-        h1 a {
-            background: url(images/logo.png) no-repeat 0 0;
-            border: 0; 
-            text-indent: -9999px; }*/
-
-
 header {
     height: 526px;
     position: fixed;
@@ -111,7 +98,7 @@ header .profile {
             animation-fill-mode: both; }
 
 header h2 {
-    color: #ffffff;
+    color: #F8F8FF;
     display: block;
     font-size: 3em;
     line-height: 1em;
@@ -200,7 +187,7 @@ header .social {
 
 /* ====================================<CONTAINER>=============================== */
 #container {
-    background: #f8f8ff;
+    background: #F8F8FF;
     box-shadow: 0 0 5px rgba(0,0,0,.2);
     margin: 552px auto 0 auto;
     padding-top: 20px;
@@ -209,7 +196,7 @@ header .social {
     z-index: 3; }
 
 #container h2 {
-    color: #696969;
+    color: #4B0082;
     display: block;
     font-family: ProximaNovaSemiBold;
     font-size: 1em;
@@ -233,6 +220,9 @@ header .social {
         height: 10px; 
         padding: 20px 0; }
         
+.revealOnScroll, .revealOnScroll2, .revealOnScroll3{
+  visibility: hidden;
+}
 
 /* ====================================<ABOUT, TOOLS / SKILLS >================== */
 .about, .skillspectrum {
@@ -246,11 +236,12 @@ header .social {
 .about p {
     text-align: center;
     width: 520px;
-    margin: 20px auto; }
+    margin: 20px auto; 
+    color: #4B0082;}
 
 .skillsA, .skillsB,
 .skillsAname, .skillsBname {
-    color: #696969;
+    color: #f5f5f5;
     height: 60px; 
     list-style: none;
     margin: 0;
@@ -271,16 +262,16 @@ header .social {
         text-align: center;
         width: 20%; }
 
-        .skillsA li.ruby { border-top-color: rgba(220, 220, 220, 1.0); border-top-width: 40px; }
-        .skillsA li.html { border-top-color: rgba(220, 220, 220, 0.8); border-top-width: 40px; left: 20%; }
-        .skillsA li.js   { border-top-color: rgba(220, 220, 220, 0.6); border-top-width: 40px; left: 40%; }
-        .skillsA li.postgresql { border-top-color: rgba(220, 220, 220, 0.4); border-top-width: 40px; left: 60%; }
-        .skillsA li.php { border-top-color: rgba(220, 220, 220, 0.2); border-top-width: 40px; left: 80%; }
-        .skillsB li.rails { border-top-color: rgba(220, 220, 220, 1.0); border-top-width: 40px; }
-        .skillsB li.css  { border-top-color: rgba(220, 220, 220, 0.8); border-top-width: 40px; left: 20%; }
-        .skillsB li.d3 { border-top-color: rgba(220, 220, 220, 0.6); border-top-width: 40px; left: 40%; }
-        .skillsB li.backbone { border-top-color: rgba(220, 220, 220, 0.4); border-top-width: 40px; left: 60%; }
-        .skillsB li.tdd { border-top-color: rgba(220, 220, 220, 0.2); border-top-width: 40px; left: 80%; }
+        .skillsA li.ruby { border-top-color: rgba(72, 61, 139, 1.0); border-top-width: 40px; }
+        .skillsA li.html { border-top-color: rgba(72, 61, 139, 0.8); border-top-width: 40px; left: 20%; }
+        .skillsA li.js   { border-top-color: rgba(72, 61, 139, 0.6); border-top-width: 40px; left: 40%; }
+        .skillsA li.postgresql { border-top-color: rgba(72, 61, 139, 0.4); border-top-width: 40px; left: 60%; }
+        .skillsA li.php { border-top-color: rgba(72, 61, 139, 0.2); border-top-width: 40px; left: 80%; }
+        .skillsB li.rails { border-top-color: rgba(72, 61, 139, 1.0); border-top-width: 40px; }
+        .skillsB li.css  { border-top-color: rgba(72, 61, 139, 0.8); border-top-width: 40px; left: 20%; }
+        .skillsB li.d3 { border-top-color: rgba(72, 61, 139, 0.6); border-top-width: 40px; left: 40%; }
+        .skillsB li.backbone { border-top-color: rgba(72, 61, 139, 0.4); border-top-width: 40px; left: 60%; }
+        .skillsB li.tdd { border-top-color: rgba(72, 61, 139, 0.2); border-top-width: 40px; left: 80%; }
 
         .skillsAname li, .skillsBname li {
             border-top-style:none;
@@ -313,18 +304,13 @@ header .social {
     padding-top: 5px;
     padding-bottom: 100px; }
 
-/*.portfolio-lang p {
-    margin: 0 auto 10px auto;
-    padding-bottom: 40px; 
-    text-align:left; }*/
-
 .portfolio-title p {
-    color: #214a64;
+    color: #4B0082;
     font-size: 13px; 
     text-align: center; }
 
 .portfolio-text p {
-    color: #696969; 
+    color: #4B0082; 
     font-size: 18px; 
     text-align: justify; 
     font-weight: 900;
@@ -333,35 +319,23 @@ header .social {
 .portfolio-text li { 
     font-size: 16px;  
   }
-/*.portfolio section a { 
-    font-family: ProximaNovaSemiBold; }
-    
-        .portfolio section a.item {
-            border: 0; 
-            border-radius: 2%;
-            display: block;
-            height: 180px;
-            margin-bottom: 40px;
-            overflow: hidden;
-            position: relative;
-            width: 290px; }
-
-        .portfolio section .icon {
-            margin-bottom: 30px; }
-        
-        .portfolio section a img {
-            display: block; }*/
 
 .row1, .row2, .row3, .row4, .row5, .row5 {
     flex: 1;
     background : #f8f8ff;
     /*border: 1px solid #e6e6e6;*/
     box-sizing: border-box;
-    color: #696969;
+    color: #4B0082;
     font: 20px/30px "ProximaNovaLight","Helvetica Neue",Helvetica,-serif;
     height: 180px;
     text-align: left;
     width: 240px; }
+
+.row1 {
+    opacity: 1;
+    text-shadow: 0px 2px 3px #555;
+    font: 28px/30px "ProximaNovaLight","Helvetica Neue",Helvetica,-serif;
+}
 
     .column-one {
         order: 1;
@@ -420,24 +394,6 @@ header .social {
             order: 3; 
             background-position: left; }
 
-/*.row4 {
-    font: 16px/24px "ProximaNovaLight","Helvetica Neue",Helvetica,-serif;
-    height: 50px; }
-
-        .column-one-lang {    
-            order: 1;
-            margin-right:20px;
-            background-position: center; }
-
-        .column-two-lang {
-            order: 2;
-            margin-right:20px; 
-            background-position: center; }
-
-        .column-three-lang {
-            order: 3; 
-            background-position: center; }*/
-
 .row5, .row6 {
     font: 12px/20px "ProximaNovaLight","Helvetica Neue",Helvetica,-serif;
     height: 100px; }
@@ -472,8 +428,7 @@ header .social {
         .column-one-lang-bar-name, 
         .column-two-lang-bar-name,
         .column-three-lang-bar-name {
-          color: #696969;
-          /*height: 60px; */
+          color: #FFFFFF;
           list-style: none;
           margin: -110px auto 0 0;
           padding: -2px;
@@ -481,25 +436,24 @@ header .social {
           text-align: left; 
           display: block; }
 
-        .column-one-lang-bar li.lang-ror          { border-top-color:rgba(220,220,220,1.0); border-top-width: 20px; width: 100%; }
-        .column-one-lang-bar li.lang-htmlcss      { border-top-color:rgba(220,220,220,0.8); border-top-width: 20px; width: 100%; }
-        .column-one-lang-bar li.lang-jqueryjs     { border-top-color:rgba(220,220,220,0.7); border-top-width: 20px; width:  50%; }
-        .column-one-lang-bar li.lang-ajax         { border-top-color:rgba(220,220,220,0.5); border-top-width: 20px; width:  40%; }
-        .column-one-lang-bar li.lang-postgresql   { border-top-color:rgba(220,220,220,0.3); border-top-width: 20px; width: 100%; }
+   
+        .column-one-lang-bar li.lang-ror          { border-top-color:rgba(25,25,112,1.0); border-top-width: 20px; width: 100%; }
+        .column-one-lang-bar li.lang-htmlcss      { border-top-color:rgba(25,25,112,0.8); border-top-width: 20px; width: 100%; }
+        .column-one-lang-bar li.lang-jqueryjs     { border-top-color:rgba(25,25,112,0.7); border-top-width: 20px; width:  50%; }
+        .column-one-lang-bar li.lang-ajax         { border-top-color:rgba(25,25,112,0.5); border-top-width: 20px; width:  40%; }
+        .column-one-lang-bar li.lang-postgresql   { border-top-color:rgba(25,25,112,0.3); border-top-width: 20px; width: 100%; }
 
-        .column-two-lang-bar li.lang-ror          { border-top-color:rgba(220,220,220,1.0); border-top-width: 20px; width: 100%; }
-        .column-two-lang-bar li.lang-htmlcss      { border-top-color:rgba(220,220,220,0.8); border-top-width: 20px; width: 100%; }
-        .column-two-lang-bar li.lang-jqueryjs     { border-top-color:rgba(220,220,220,0.7); border-top-width: 20px; width:  80%; }
-        .column-two-lang-bar li.lang-d3           { border-top-color:rgba(220,220,220,0.5); border-top-width: 20px; width: 100%; }
-        .column-two-lang-bar li.lang-postgresql   { border-top-color:rgba(220,220,220,0.3); border-top-width: 20px; width: 100%; }
+        .column-two-lang-bar li.lang-ror          { border-top-color:rgba(25,25,112,1.0); border-top-width: 20px; width: 100%; }
+        .column-two-lang-bar li.lang-htmlcss      { border-top-color:rgba(25,25,112,0.8); border-top-width: 20px; width: 100%; }
+        .column-two-lang-bar li.lang-jqueryjs     { border-top-color:rgba(25,25,112,0.7); border-top-width: 20px; width:  80%; }
+        .column-two-lang-bar li.lang-d3           { border-top-color:rgba(25,25,112,0.5); border-top-width: 20px; width: 100%; }
+        .column-two-lang-bar li.lang-postgresql   { border-top-color:rgba(25,25,112,0.3); border-top-width: 20px; width: 100%; }
 
-        .column-three-lang-bar li.lang-ror        { border-top-color:rgba(220,220,220,1.0); border-top-width: 20px; width: 100%; }
-        .column-three-lang-bar li.lang-htmlcss    { border-top-color:rgba(220,220,220,0.8); border-top-width: 20px; width: 100%; }
-        .column-three-lang-bar li.lang-jqueryjs   { border-top-color:rgba(220,220,220,0.7); border-top-width: 20px; width:  60%; }
-        .column-three-lang-bar li.lang-json       { border-top-color:rgba(220,220,220,0.5); border-top-width: 20px; width:  40%; }
-        .column-three-lang-bar li.lang-postgresql { border-top-color:rgba(220,220,220,0.3); border-top-width: 20px; width: 100%; }
-
-        
+        .column-three-lang-bar li.lang-ror        { border-top-color:rgba(25,25,112,1.0); border-top-width: 20px; width: 100%; }
+        .column-three-lang-bar li.lang-htmlcss    { border-top-color:rgba(25,25,112,0.8); border-top-width: 20px; width: 100%; }
+        .column-three-lang-bar li.lang-jqueryjs   { border-top-color:rgba(25,25,112,0.7); border-top-width: 20px; width:  60%; }
+        .column-three-lang-bar li.lang-json       { border-top-color:rgba(25,25,112,0.5); border-top-width: 20px; width:  40%; }
+        .column-three-lang-bar li.lang-postgresql { border-top-color:rgba(25,25,112,0.3); border-top-width: 20px; width: 100%; }
 
         .column-one-lang-bar-name li {
              margin: 12px auto -10px 1px; 
@@ -508,24 +462,7 @@ header .social {
              margin: 12px auto -10px 20px; 
         }
         .column-three-lang-bar-name li {
-            /*border-top-style:none;
-            text-align: left;*/
             margin: 12px auto -10px 20px; }
-
-    /*.skillsB {
-        margin: -60px auto; }
-
-    .skillsBname {
-        margin: 60px auto -30px auto; }
-
-    .skillsA li, .skillsB li, .skillsAname li, .skillsBname li {  
-        border-top-style: solid;
-        bottom: 0;
-        display:inline-block;
-        position: absolute;
-        text-align: center;
-        width: 20%; } */
-
 
 .column-one, .column-one-text, .column-one-lang, 
 .column-two, .column-two-text, .column-two-lang,
@@ -541,35 +478,20 @@ header .social {
     font-size: 48px;
     font-weight: bold;
     opacity: 0.6;
-    filter: alpha(opacity=20); }
+    filter: alpha(opacity=60); }
 
 .column-one a, 
 .column-two a,
 .column-three a {
-    color: #000000; }
-
-
-/*  .column-one-text:hover a, 
-.column-two-text:hover a,
-.column-three-text:hover a {
-    font-size: 18px;
-    opacity: 0.8;
-    filter: alpha(opacity=80); } */
+    color: #4B0082; }
 
 .column-one a:hover, .column-one:hover,
 .column-two a:hover, .column-two:hover,
 .column-three a:hover, .column-three:hover
  {  
     font-weight: bold;
-    color: #FFFFFF;
-    /*#696969  
-    1px 0px 1px #ccc,
-    0px 1px 1px #eee, 
-    2px 1px 1px #ccc;
-
-    #000 0px 0px 1px,
-    #000 0px 0px 1px,
-    #000 0px 0px 1px;*/
+    color: #4B0082;
+    opacity:0.9;
     text-shadow: 
     0 1px 0 #ccc,
     0 2px 0 #c9c9c9,
@@ -615,7 +537,7 @@ header .social {
         text-align: center; }
 
 form p {
-    border-bottom: 1px solid #444948;
+    border-bottom: 1px solid #4B0082;
     display: block;
     padding-top: 20px;
     margin-bottom: 40px; 
@@ -625,8 +547,8 @@ input, textarea, select {
     background: none;
     border: 0;
     border-radius: 0;
-    box-sizing: border-box;
-    color: #444948;
+    box-sizing: border-box
+    color: #4B0082;
     font: normal 14px/21px ProximaNovaSemiBold, "Helvetica Neue", Helvetica, sans-serif;
     height: 40px;
     padding: 10px 0;    
@@ -639,12 +561,12 @@ input, textarea, select {
         padding-left: 0.7em; }
 
     ::-webkit-input-placeholder { 
-        color: #444948 !important; 
+        color: #4B0082 !important; 
         font-size: 12px;
         text-transform: uppercase;  }
 
     :-moz-placeholder { 
-        color: #444948 !important; 
+        color: #4B0082 !important; 
         font-size: 12px; 
         text-transform: uppercase; }
 
@@ -665,8 +587,8 @@ div.button {
     border: 0;
     cursor: pointer;
     margin: 0 auto;
-    color: #444948;
-    border: 1px solid #444948;
+    color: #4B0082;
+    border: 1px solid #4B0082;
     box-sizing: border-box;
     width: 40%;
     font-weight: bold;
@@ -678,7 +600,7 @@ div.button {
     text-align: center; }
 
     #submit:hover {
-        background: #696969;
+        background: #191970;
         color: #fff; }
 #clear {
     display: block;
@@ -767,7 +689,8 @@ footer {
     padding-top: 30px;
     text-align: center;
     font-size: 11px;
-    color: #3F372F;
+    /*color: #3F372F;*/
+    color: #191970;
     padding-bottom: 60px;
     position: relative;
     font-family: ProximaNovaSemibold;
@@ -796,6 +719,7 @@ footer {
         left: 0; }
 
 /* ====================================<FROM ANIMATE.CSS>======================== */
+/*fadeInDown==========================*/
 @-webkit-keyframes fadeInDown {
   from {
     opacity: 0;
@@ -825,10 +749,30 @@ footer {
 }
 
 .fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
+  visibility: visible;
+  
+   -webkit-animation-name: fadeInDown;
+       -moz-animation-name: fadeInDown;
+         -o-animation-name: fadeInDown;
+            animation-name: fadeInDown;
+
+    -webkit-animation-delay: 1s;
+       -moz-animation-delay: 1s;
+         -o-animation-delay: 1s;
+            animation-delay: 1s;
+
+    -webkit-animation-duration: 1.5s;
+       -moz-animation-duration: 1.5s;
+         -o-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+
+    -webkit-animation-fill-mode: both;
+       -moz-animation-fill-mode: both;
+         -o-animation-fill-mode: both;
+            animation-fill-mode: both;
 }
 
+/*fadeInUp============================*/
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
@@ -837,7 +781,7 @@ footer {
   }
 
   to {
-    opacity: 1;
+    /*opacity: 1;*/
     -webkit-transform: none;
     transform: none;
   }
@@ -851,61 +795,307 @@ footer {
   }
 
   to {
-    opacity: 1;
+    /*opacity: 1;*/
     -webkit-transform: none;
     transform: none;
   }
 }
 
 .fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
+  visibility: visible;
+  
+   -webkit-animation-name: fadeInUp;
+       -moz-animation-name: fadeInUp;
+         -o-animation-name: fadeInUp;
+            animation-name: fadeInUp;
+
+    -webkit-animation-delay: 0.8s;
+       -moz-animation-delay: 0.8s;
+         -o-animation-delay: 0.8s;
+            animation-delay: 0.8s;
+
+    -webkit-animation-duration: 1.2s;
+       -moz-animation-duration: 1.2s;
+         -o-animation-duration: 1.2s;
+            animation-duration: 1.2s;
+
+    -webkit-animation-fill-mode: both;
+       -moz-animation-fill-mode: both;
+         -o-animation-fill-mode: both;
+            animation-fill-mode: both;
 }
 
-@-webkit-keyframes flipInX {
+/*fadeInUp2,fadeInUp3=================*/
+@-webkit-keyframes fadeInUp2, fadeInUp3 {
   from {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    /*opacity: 1;*/
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp2, fadeInUp3{
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    /*opacity: 1;*/
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp2 {
+  visibility: visible;
+  
+   -webkit-animation-name: fadeInUp;
+       -moz-animation-name: fadeInUp;
+         -o-animation-name: fadeInUp;
+            animation-name: fadeInUp;
+
+    -webkit-animation-delay: 1.2s;
+       -moz-animation-delay: 1.2s;
+         -o-animation-delay: 1.2s;
+            animation-delay: 1.2s;
+
+    -webkit-animation-duration: 1.2s;
+       -moz-animation-duration: 1.2s;
+         -o-animation-duration: 1.2s;
+            animation-duration: 1.2s;
+
+    -webkit-animation-fill-mode: both;
+       -moz-animation-fill-mode: both;
+         -o-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+.fadeInUp3 {
+  visibility: visible;
+  
+   -webkit-animation-name: fadeInUp;
+       -moz-animation-name: fadeInUp;
+         -o-animation-name: fadeInUp;
+            animation-name: fadeInUp;
+
+    -webkit-animation-delay: 2.0s;
+       -moz-animation-delay: 2.0s;
+         -o-animation-delay: 2.0s;
+            animation-delay: 2.0s;
+
+    -webkit-animation-duration: 1.2s;
+       -moz-animation-duration: 1.2s;
+         -o-animation-duration: 1.2s;
+            animation-duration: 1.2s;
+
+    -webkit-animation-fill-mode: both;
+       -moz-animation-fill-mode: both;
+         -o-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+/*fadeInLeft==========================*/
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  visibility: visible;
+  
+   -webkit-animation-name: fadeInLeft;
+       -moz-animation-name: fadeInLeft;
+         -o-animation-name: fadeInLeft;
+            animation-name: fadeInLeft;
+
+    -webkit-animation-delay: 1s;
+       -moz-animation-delay: 1s;
+         -o-animation-delay: 1s;
+            animation-delay: 1s;
+
+    -webkit-animation-duration: 1.5s;
+       -moz-animation-duration: 1.5s;
+         -o-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+
+    -webkit-animation-fill-mode: both;
+       -moz-animation-fill-mode: both;
+         -o-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+/*fadeInLeft2, fadeInLeft3============*/
+
+@-webkit-keyframes fadeInLeft2, fadeInLeft3 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft2, fadeInLeft3 {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft2 {
+  visibility: visible;
+  
+   -webkit-animation-name: fadeInLeft;
+       -moz-animation-name: fadeInLeft;
+         -o-animation-name: fadeInLeft;
+            animation-name: fadeInLeft;
+
+    -webkit-animation-delay: 1.2s;
+       -moz-animation-delay: 1.2s;
+         -o-animation-delay: 1.2s;
+            animation-delay: 1.2s;
+
+    -webkit-animation-duration: 1.5s;
+       -moz-animation-duration: 1.5s;
+         -o-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+
+    -webkit-animation-fill-mode: both;
+       -moz-animation-fill-mode: both;
+         -o-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+.fadeInLeft3 {
+  visibility: visible;
+  
+   -webkit-animation-name: fadeInLeft;
+       -moz-animation-name: fadeInLeft;
+         -o-animation-name: fadeInLeft;
+            animation-name: fadeInLeft;
+
+    -webkit-animation-delay: 1.5s;
+       -moz-animation-delay: 1.5s;
+         -o-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+
+    -webkit-animation-duration: 1.5s;
+       -moz-animation-duration: 1.5s;
+         -o-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+
+    -webkit-animation-fill-mode: both;
+       -moz-animation-fill-mode: both;
+         -o-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+/*fadeInflipInX=======================*/
+@-webkit-keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
     opacity: 0;
   }
 
   40% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-    -webkit-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
+    -webkit-transform: perspective(400px) rotateX(-10deg);
+    transform: perspective(400px) rotateX(-10deg);
   }
 
-  60% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+  70% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
     opacity: 1;
   }
-
-  80% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-  }
-
-  to {
-    -webkit-transform: perspective(400px);
-    transform: perspective(400px);
-  }
 }
-@-webkit-keyframes zoomIn {
-  from {
+
+@keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    -ms-transform: perspective(400px) rotateX(90deg);
+    transform: perspective(400px) rotateX(90deg);
     opacity: 0;
-    -webkit-transform: scale3d(.3, .3, .3);
-    transform: scale3d(.3, .3, .3);
   }
 
-  50% {
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-10deg);
+    -ms-transform: perspective(400px) rotateX(-10deg);
+    transform: perspective(400px) rotateX(-10deg);
+  }
+
+  70% {
+    -webkit-transform: perspective(400px) rotateX(10deg);
+    -ms-transform: perspective(400px) rotateX(10deg);
+    transform: perspective(400px) rotateX(10deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    -ms-transform: perspective(400px) rotateX(0deg);
+    transform: perspective(400px) rotateX(0deg);
     opacity: 1;
   }
 }
 
+.flipInX {
+  visibility: visible;
+  -webkit-backface-visibility: visible !important;
+  -ms-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+}
+
+/*rubberBand==========================*/
 @-webkit-keyframes rubberBand {
   from {
     -webkit-transform: scale3d(1, 1, 1);
@@ -985,6 +1175,7 @@ footer {
   animation-name: rubberBand;
 }
 
+/*shake===============================*/
 @-webkit-keyframes shake {
   from, to {
     -webkit-transform: translate3d(0, 0, 0);
@@ -1015,10 +1206,6 @@ and (max-device-width: 640px) {
         background-position-x: -8%;
     }
 
-    /*@-ms-viewport{
-        width: device-width;
-    }*/
-
     .portfolio, .portfolio-text, .portfolio-title,
     .portfolio .column, .portfolio-lang-bar, .portfolio-lang-bar-name,
     footer,
@@ -1036,8 +1223,6 @@ and (max-device-width: 640px) {
 
     #container,
     #contact form {
-        /*padding-left: 10px;
-        padding-right: 10px; }*/
 
     div.button { 
         padding-top: 10px; }
