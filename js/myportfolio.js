@@ -97,7 +97,6 @@ $(function() {
           var $this = $(this), offsetTop = $this.offset().top;
           if (scrolled + win_height_padded < offsetTop) {
               $(this).removeClass(animate);
-              $this.addClass("fadeOutDown");
           } 
       });
   }
@@ -127,7 +126,6 @@ $window.on("scroll", revealOnScroll2);
           var $this = $(this), offsetTop2 = $this.offset().top;        
           if (scrolled2 + win_height_padded2 < offsetTop2) {          
               $(this).removeClass(animate2);
-              $this.addClass("fadeOutDown2");
           } 
       });
   }
@@ -157,7 +155,6 @@ $window.on("scroll", revealOnScroll3);
           var $this = $(this), offsetTop3 = $this.offset().top;
           if (scrolled3 + win_height_padded3 < offsetTop3) {
               $(this).removeClass(animate3);
-              $this.addClass("fadeOutDown3");
           } 
       });
   }
@@ -187,7 +184,6 @@ $window.on("scroll", revealOnScrollBar);
           var $this = $(this), offsetTop4 = $this.offset().top;
           if (scrolled4 + win_height_padded4 < offsetTop4) {
               $(this).removeClass(animate4);
-              $this.addClass("fadeOutLeft");
           } 
       });
   }
@@ -217,7 +213,6 @@ $window.on("scroll", revealOnScrollBar2);
           var $this = $(this), offsetTop5 = $this.offset().top;
           if (scrolled5 + win_height_padded5 < offsetTop5) {
               $(this).removeClass(animate5);
-              $this.addClass("fadeOutLeft2");
           } 
       });
   }
@@ -230,13 +225,11 @@ $window.on("scroll", revealOnScrollBar3);
       var animate6 = 'fadeInLeft3';
 
       $(".revealOnScrollBar3:not(.animate6)").each(function () {          // $(".revealOnScroll:not(.fadeInLeft)").each(function () {
-        $(this).removeClass("fadeOutLeft3");
         var $this = $(this), offsetTop6 = $this.offset().top;
 
         if (scrolled6 + win_height_padded6 > offsetTop6) {
             if ($this.data('timeout')) {
                 window.setTimeout(function() {
-                    
                     $this.addClass(animate6);
                 }, parseInt($this6.data('timeout'),10));
             } else {
@@ -249,7 +242,6 @@ $window.on("scroll", revealOnScrollBar3);
           var $this = $(this), offsetTop6 = $this.offset().top;
           if (scrolled6 + win_height_padded6 < offsetTop6) {
               $(this).removeClass(animate6);
-              $this.addClass("fadeOutLeft3");
           } 
       });
   }
