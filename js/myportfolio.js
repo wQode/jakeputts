@@ -28,17 +28,13 @@ $(function() {
   // });
 
 // Click settings on email icon to scroll down to contact form
-  // $('.email').click(function(e) {
-  $('.email').click(function()
-    // if($(window).width() > 640)
+  $('.email').click(function(e) {
+    if($(window).width() > 640)
     {
-      // e.preventDefault();
-      // var email_pos = document.getElementById('email');
-      console.log(email_pos);
-      $('html, body').animate({ scrollTop: 0 }, 'slow');
-      return false;
-      // $("html, body").animate({ scrollTop: $(document).height() }, "slow");
-    });
+      e.preventDefault(); 
+      $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+    }
+  });
   
 
 // Parallax settings for header top
