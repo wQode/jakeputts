@@ -656,8 +656,8 @@ label {
 
 .avatar {
         display: block;
-        border-radius: 50%;
-        width: 36px;
+        /*border-radius: 50%;*/
+        width: 40px;
         margin: 0 auto; }
 
     .avatar:hover {
